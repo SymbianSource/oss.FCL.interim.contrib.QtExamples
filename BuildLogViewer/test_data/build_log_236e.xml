@@ -1,0 +1,1286 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<buildlog sbs_version="2.5.2 [2009-03-06 release]" xmlns="http://symbian.com/xml/build/log" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://symbian.com/xml/build/log http://symbian.com/xml/build/log/1_0.xsd">
+<info>sbs: version 2.5.2 [2009-03-06 release]
+</info>
+<info>SBS_HOME C:/Symbian/Tools/PDT_1.0/raptor</info>
+<info>Set-up C:/Symbian/Tools/PDT_1.0/raptor/sbs_init.xml</info>
+<info>Command-line-arguments -s sf\app\organizer\package_definition.xml -k -c winscw_udeb -f build_log_236e.xml</info>
+<info>Environment TMP=C:\DOCUME~1\johnk\LOCALS~1\Temp</info>
+<info>Environment COMPUTERNAME=PC213502752220</info>
+<info>Environment MWSYM2LIBRARYFILES=C:\Symbian\Tools\PDT_1.0\Carbide.c++\x86Build\Symbian_Support\Runtime\Runtime_x86\Runtime_Win32\Libs\MSL_ALL_MSE_Symbian_D.lib;C:\Symbian\Tools\PDT_1.0\Carbide.c++\x86Build\Symbian_Support\Win32-x86 Support\Libraries\Win32 SDK\gdi32.lib;C:\Symbian\Tools\PDT_1.0\Carbide.c++\x86Build\Symbian_Support\Win32-x86 Support\Libraries\Win32 SDK\user32.lib;C:\Symbian\Tools\PDT_1.0\Carbide.c++\x86Build\Symbian_Support\Win32-x86 Support\Libraries\Win32 SDK\kernel32.lib</info>
+<info>Environment USERDOMAIN=PC213502752220</info>
+<info>Environment __PYTHON__=C:\Symbian\Tools\PDT_1.0\raptor\win32\python252\python.exe</info>
+<info>Environment __RAPTOR__=C:\Symbian\Tools\PDT_1.0\raptor\win32\python252\python.exe C:\Symbian\Tools\PDT_1.0\raptor\python\raptor_start.py</info>
+<info>Environment COMMONPROGRAMFILES=C:\Program Files\Common Files</info>
+<info>Environment PROCESSOR_IDENTIFIER=x86 Family 6 Model 23 Stepping 6, GenuineIntel</info>
+<info>Environment PROGRAMFILES=C:\Program Files</info>
+<info>Environment PROCESSOR_REVISION=1706</info>
+<info>Environment SYSTEMROOT=C:\WINDOWS</info>
+<info>Environment PATH=C:\Symbian\Tools\PDT_1.0\raptor\win32\mingw\bin;C:\Symbian\Tools\PDT_1.0\raptor\win32\cygwin\bin;"C:\Symbian\Tools\PDT_1.0\Carbide.c++\x86Build\Symbian_Support\Runtime\Runtime_x86\Runtime_Win32\Libs;C:\Python25\Lib\site-packages\pythonwin;C:\Python25\;C:\Perl\bin;C:\Program Files\Common Files\Symbian\Tools;C:\Program Files\CSL Arm Toolchain\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Symbian\Tools\PDT_1.0\Carbide.c++\x86Build\Symbian_Tools\Command_Line_Tools;z:\epoc32\tools"</info>
+<info>Environment HGMERGE="C:\Program Files\WinMerge\WinMergeU.exe"</info>
+<info>Environment TEMP=C:\DOCUME~1\johnk\LOCALS~1\Temp</info>
+<info>Environment ALLUSERSPROFILE=C:\Documents and Settings\All Users</info>
+<info>Environment L_SDK=C:\Symbian\Tools\PDT_1.0\Carbide.c++\x86Build\Symbian_Support\Win32-x86 Support\Libraries\Win32 SDK</info>
+<info>Environment HELIUM_HOME=C:\Symbian\Tools\PDT_1.0\helium</info>
+<info>Environment PROCESSOR_ARCHITECTURE=x86</info>
+<info>Environment SBS_HOME=C:\Symbian\Tools\PDT_1.0\raptor</info>
+<info>Environment PLATFORM=BNB</info>
+<info>Environment SESSIONNAME=Console</info>
+<info>Environment HOMEPATH=\Documents and Settings\johnk</info>
+<info>Environment MWSYM2LIBRARIES=C:\Symbian\Tools\PDT_1.0\Carbide.c++\x86Build\Symbian_Support\Win32-x86 Support\Libraries\Win32 SDK;C:\Symbian\Tools\PDT_1.0\Carbide.c++\x86Build\Symbian_Support\Runtime\Runtime_x86\Runtime_Win32\Libs</info>
+<info>Environment USERNAME=JohnK</info>
+<info>Environment MWLIBRARIES=C:\Symbian\Tools\PDT_1.0\Carbide.c++\x86Build\Symbian_Support\Win32-x86 Support\Libraries\Win32 SDK;C:\Symbian\Tools\PDT_1.0\Carbide.c++\x86Build\Symbian_Support\MSL\MSL_C\MSL_Common\Include;C:\Symbian\Tools\PDT_1.0\Carbide.c++\x86Build\Symbian_Support\MSL\MSL_C\MSL_Win32\Include;C:\Symbian\Tools\PDT_1.0\Carbide.c++\x86Build\Symbian_Support\MSL\MSL_C++\MSL_Common\Include;C:\Symbian\Tools\PDT_1.0\Carbide.c++\x86Build\Symbian_Support\Runtime\Runtime_x86\Runtime_Win32\Libs </info>
+<info>Environment LOGONSERVER=\\PC213502752220</info>
+<info>Environment PROMPT=$P$G</info>
+<info>Environment COMSPEC=C:\WINDOWS\system32\cmd.exe</info>
+<info>Environment L_RT=C:\Symbian\Tools\PDT_1.0\Carbide.c++\x86Build\Symbian_Support\Runtime\Runtime_x86\Runtime_Win32\Libs</info>
+<info>Environment PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.py;.pyw</info>
+<info>Environment CLIENTNAME=Console</info>
+<info>Environment FP_NO_HOST_CHECK=NO</info>
+<info>Environment WINDIR=C:\WINDOWS</info>
+<info>Environment __RAPTOR_PY__=C:\Symbian\Tools\PDT_1.0\raptor\python\raptor_start.py</info>
+<info>Environment APPDATA=C:\Documents and Settings\johnk\Application Data</info>
+<info>Environment HOMEDRIVE=C:</info>
+<info>Environment SYSTEMDRIVE=C:</info>
+<info>Environment ONLINESERVICES=Online Services</info>
+<info>Environment MWCSYM2INCLUDES=C:\Symbian\Tools\PDT_1.0\Carbide.c++\x86Build\Symbian_Support\MSL\MSL_C\MSL_Common\Include;C:\Symbian\Tools\PDT_1.0\Carbide.c++\x86Build\Symbian_Support\MSL\MSL_C\MSL_Win32\Include;C:\Symbian\Tools\PDT_1.0\Carbide.c++\x86Build\Symbian_Support\MSL\MSL_C\MSL_X86;C:\Symbian\Tools\PDT_1.0\Carbide.c++\x86Build\Symbian_Support\MSL\MSL_C++\MSL_Common\Include;C:\Symbian\Tools\PDT_1.0\Carbide.c++\x86Build\Symbian_Support\MSL\MSL_Extras\MSL_Common\Include;C:\Symbian\Tools\PDT_1.0\Carbide.c++\x86Build\Symbian_Support\MSL\MSL_Extras\MSL_Win32\Include;C:\Symbian\Tools\PDT_1.0\Carbide.c++\x86Build\Symbian_Support\Win32-x86 Support\Headers\Win32 SDK</info>
+<info>Environment NUMBER_OF_PROCESSORS=2</info>
+<info>Environment PROCESSOR_LEVEL=6</info>
+<info>Environment EPOCROOT=z:\</info>
+<info>Environment OS=Windows_NT</info>
+<info>Environment USERPROFILE=C:\Documents and Settings\johnk</info>
+<info>updating configuration make with variant last</info>
+<info>Buildable configuration 'winscw_udeb'</info>
+<info>System Definition file sf/app/organizer/package_definition.xml</info>
+<info>Found 6 bld.inf references in sf/app/organizer/package_definition.xml within 1 layers:</info>
+<info>	app</info>
+<info>Found 6 bld.inf references in layer "app"</info>
+<info>Buildable specification group 'CONFIG_WIDE'</info>
+<info>Buildable specification 'config_wide'</info>
+<info>OS version "vtb91sf" determined from file "z:/epoc32/data/buildinfo.txt"</info>
+<info>applying the OS variant "vtb91sf" to the configuration "winscw_udeb".</info>
+<warning>missing flag ENABLE_ABIV2_MODE in z:/epoc32/tools/variant/variant.cfg file. ABIV1 builds are not supported.</warning>
+<info>Processing Z:/sf/app/organizer/officeappeng/sheeteng/group/bld.inf</info>
+<info>Processing Z:/sf/app/organizer/officeappeng/wordeng/group/bld.inf</info>
+<info>Processing Z:/sf/app/organizer/pimappservices/agendamodeltest/TestAgendaSrv/bld.inf</info>
+<info>Processing Z:/sf/app/organizer/pimappservices/calendarvcalplugin/group/bld.inf</info>
+<info>Processing Z:/sf/app/organizer/pimappsupport/chinesecalendarconverter/group/bld.inf</info>
+<info>Processing Z:/sf/app/organizer/group/bld.inf</info>
+<info>Up-to-date: z:/epoc32/include/shgapi.h</info>
+<info>Up-to-date: z:/epoc32/include/shgerr.h</info>
+<info>Up-to-date: z:/epoc32/include/shgpanic.h</info>
+<info>Up-to-date: z:/epoc32/include/shgcoord.h</info>
+<info>Up-to-date: z:/epoc32/include/shgtoken.h</info>
+<info>Up-to-date: z:/epoc32/include/shgfmlex.h</info>
+<info>Up-to-date: z:/epoc32/include/shgfmevl.h</info>
+<info>Up-to-date: z:/epoc32/include/shgfmvwr.h</info>
+<info>Up-to-date: z:/epoc32/rom/include/sheng.iby</info>
+<info>Up-to-date: z:/epoc32/rom/include/sheng.hby</info>
+<info>Up-to-date: z:/epoc32/include/wngmodel.h</info>
+<info>Up-to-date: z:/epoc32/include/wngmodel.inl</info>
+<info>Up-to-date: z:/epoc32/include/wngdoor.h</info>
+<info>Up-to-date: z:/epoc32/rom/include/wpeng.iby</info>
+<info>Up-to-date: z:/epoc32/rom/include/wpengtest.iby</info>
+<info>Up-to-date: z:/epoc32/rom/include/agnversit.iby</info>
+<info>Up-to-date: z:/epoc32/include/calendarconverter.h</info>
+<info>Up-to-date: z:/epoc32/include/calendarconverterplugin.h</info>
+<info>Up-to-date: z:/epoc32/rom/include/calcon.iby</info>
+<info>Up-to-date: z:/epoc32/rom/include/core/app/missedalarmstore.iby</info>
+<info>Up-to-date: Z:/sf/app/organizer/alarmengines/inc/missedalarm.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/alarmengines/inc/missedalarmstore.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/alarmengines/inc/missedalarmstorecrkeys.h</info>
+<info>Up-to-date: z:/epoc32/rom/config/confml_data/s60/missedalarmstore.confml</info>
+<info>Up-to-date: z:/epoc32/rom/config/confml_data/s60/missedalarmstore_2001111B.crml</info>
+<info>Up-to-date: z:/epoc32/data/z/private/10202be9/2001111B.txt</info>
+<info>Up-to-date: z:/epoc32/release/winscw/udeb/Z/private/10202be9/2001111B.txt</info>
+<info>Up-to-date: z:/epoc32/winscw/c/private/10202be9/persists/2001111B.txt</info>
+<info>Up-to-date: z:/epoc32/rom/include/core/app/versit2.iby</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarengines/inc/ical.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarengines/inc/icalbase.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarengines/inc/icalparser.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarengines/inc/icalcomponent.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarengines/inc/icalproperty.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarengines/inc/icalpropertyparam.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarengines/inc/icalvalue.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarengines/inc/icalrulesegment.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarengines/inc/icalerrors.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarengines/inc/icalkeywords.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarengines/inc/agnexternalinterface.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarengines/inc/agnexternalinterface.inl</info>
+<info>Up-to-date: z:/epoc32/rom/include/core/app/AgnVersit2.iby</info>
+<info>Up-to-date: z:/epoc32/rom/include/core/app/CalenInterimUtils.iby</info>
+<info>Up-to-date: z:/epoc32/rom/include/core/app/CalenImp.iby</info>
+<info>Up-to-date: z:/epoc32/rom/include/core/app/CalenLauncher.iby</info>
+<info>Up-to-date: z:/epoc32/include/caldavsession.h</info>
+<info>Up-to-date: z:/epoc32/rom/config/confml_data/s60/s60icalui.confml</info>
+<info>Up-to-date: z:/epoc32/rom/config/confml_data/s60/s60icalui_10207286.crml</info>
+<info>Up-to-date: z:/epoc32/rom/include/core/app/mrmailboxutils.iby</info>
+<info>Up-to-date: z:/epoc32/rom/include/core/app/searchfw.iby</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/loc/sc/notessearchplugin.loc</info>
+<info>Up-to-date: z:/epoc32/rom/include/core/app/notessearchplugin.iby</info>
+<info>Up-to-date: z:/epoc32/rom/include/language/app/notessearchpluginresources.iby</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/loc/sc/filessearchplugin.loc</info>
+<info>Up-to-date: z:/epoc32/rom/include/core/app/filessearchplugin.iby</info>
+<info>Up-to-date: z:/epoc32/rom/include/language/app/filessearchpluginresources.iby</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/loc/sc/calendarsearchplugin.loc</info>
+<info>Up-to-date: z:/epoc32/rom/include/core/app/calendarsearchplugin.iby</info>
+<info>Up-to-date: z:/epoc32/rom/include/language/app/calendarsearchpluginresources.iby</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/loc/sc/contactssearchplugin.loc</info>
+<info>Up-to-date: z:/epoc32/rom/include/core/app/contactssearchplugin.iby</info>
+<info>Up-to-date: z:/epoc32/rom/include/language/app/contactssearchpluginresources.iby</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/loc/sc/messagessearchplugin.loc</info>
+<info>Up-to-date: z:/epoc32/rom/include/core/app/messagessearchplugin.iby</info>
+<info>Up-to-date: z:/epoc32/rom/include/language/app/messagessearchpluginresources.iby</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/loc/sc/multimediasearchplugin.loc</info>
+<info>Up-to-date: z:/epoc32/rom/include/core/app/multimediasearchplugin.iby</info>
+<info>Up-to-date: z:/epoc32/rom/include/language/app/multimediasearchpluginresources.iby</info>
+<info>Up-to-date: z:/epoc32/rom/include/core/app/AlmAlert.iby</info>
+<info>Up-to-date: z:/epoc32/rom/include/language/app/AlmAlertResources.iby</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/loc/sc/AlmAlert.loc</info>
+<info>Up-to-date: z:/epoc32/release/winscw/udeb/z/private/10282bc4/rules/alarmuisnooze.rul</info>
+<info>Up-to-date: z:/epoc32/release/winscw/urel/z/private/10282bc4/rules/alarmuisnooze.rul</info>
+<info>Up-to-date: z:/epoc32/data/z/private/10282bc4/rules/alarmuisnooze.rul</info>
+<info>Up-to-date: z:/epoc32/release/wins/udeb/z/data/sounds/digital/alarm.aac</info>
+<info>Up-to-date: z:/epoc32/release/wins/udeb/z/data/sounds/digital/clock.aac</info>
+<info>Up-to-date: z:/epoc32/release/wins/urel/z/data/sounds/digital/alarm.aac</info>
+<info>Up-to-date: z:/epoc32/release/wins/urel/z/data/sounds/digital/clock.aac</info>
+<info>Up-to-date: z:/epoc32/release/winscw/udeb/z/data/sounds/digital/alarm.aac</info>
+<info>Up-to-date: z:/epoc32/release/winscw/udeb/z/data/sounds/digital/clock.aac</info>
+<info>Up-to-date: z:/epoc32/release/winscw/urel/z/data/sounds/digital/alarm.aac</info>
+<info>Up-to-date: z:/epoc32/release/winscw/urel/z/data/sounds/digital/clock.aac</info>
+<info>Up-to-date: z:/epoc32/release/thumb/udeb/z/data/sounds/digital/alarm.aac</info>
+<info>Up-to-date: z:/epoc32/release/thumb/udeb/z/data/sounds/digital/clock.aac</info>
+<info>Up-to-date: z:/epoc32/release/thumb/urel/z/data/sounds/digital/alarm.aac</info>
+<info>Up-to-date: z:/epoc32/release/thumb/urel/z/data/sounds/digital/clock.aac</info>
+<info>Up-to-date: z:/epoc32/data/z/data/sounds/digital/alarm.aac</info>
+<info>Up-to-date: z:/epoc32/data/z/data/sounds/digital/clock.aac</info>
+<info>Up-to-date: z:/epoc32/data/z/system/install/alarmui_stub.sis</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/loc/sc/calendar.loc</info>
+<info>Up-to-date: z:/epoc32/rom/include/core/app/calengsplugin.iby</info>
+<info>Up-to-date: z:/epoc32/rom/include/core/app/calencontroller.iby</info>
+<info>Up-to-date: z:/epoc32/rom/include/core/app/calenviews.iby</info>
+<info>Up-to-date: z:/epoc32/rom/include/core/app/calencustomisationmanager.iby</info>
+<info>Up-to-date: z:/epoc32/rom/include/core/app/calencommonutils.iby</info>
+<info>Up-to-date: z:/epoc32/rom/include/core/app/calendar.iby</info>
+<info>Up-to-date: z:/epoc32/rom/include/core/app/caleneditors.iby</info>
+<info>Up-to-date: z:/epoc32/rom/include/core/app/calenglobaldata.iby</info>
+<info>Up-to-date: z:/epoc32/rom/include/core/app/calensvr.iby</info>
+<info>Up-to-date: z:/epoc32/rom/include/core/app/calensettingsui.iby</info>
+<info>Up-to-date: z:/epoc32/rom/include/language/app/calencommonuiresources.iby</info>
+<info>Up-to-date: z:/epoc32/rom/include/language/app/calendarresources.iby</info>
+<info>Up-to-date: z:/epoc32/rom/include/language/app/caleneditorsresources.iby</info>
+<info>Up-to-date: z:/epoc32/rom/include/customer/app/CalenThaiPlugin_Variant.iby</info>
+<info>Up-to-date: z:/epoc32/rom/include/customer/app/CalenLunarVietnamese_Variant.iby</info>
+<info>Up-to-date: z:/epoc32/rom/include/customer/app/CalenLunarChinese_Variant.iby</info>
+<info>Up-to-date: z:/epoc32/data/z/system/install/calendar_stub.sis</info>
+<info>Up-to-date: z:/epoc32/release/winscw/udeb/z/private/10202be9/10003a5b.cre</info>
+<info>Up-to-date: z:/epoc32/data/z/private/10202be9/10003a5b.cre</info>
+<info>Up-to-date: z:/epoc32/s60/icons/qgn_menu_maps.svg</info>
+<info>Up-to-date: z:/epoc32/rom/config/confml_data/s60/calendarUI.confml</info>
+<info>Up-to-date: z:/epoc32/rom/config/confml_data/s60/calendarUI_101F874B.crml</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarui/inc/calenagendautils.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarui/inc/calendateutils.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarui/inc/calenentryutil.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarui/inc/calennotedatautil.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarui/inc/calenlocationutil.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarui/inc/calensend.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarui/inc/calencontext.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarui/inc/caleninstanceid.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarui/inc/caleninstanceid.inl</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarui/inc/calencontextchangeobserver.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/inc/calenglobaldata.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarui/inc/calensettingsuicontainer.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarui/inc/calensetting.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarui/inc/calenview.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarui/inc/calencustomisation.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarui/inc/calencommandhandler.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarui/inc/calenservices.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarui/inc/calentoolbar.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarui/inc/calencustomisationmanager.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarui/inc/calenviewinfo.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarui/inc/calencontroller.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarui/inc/calencommands.hrh</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarui/inc/calenactionuiutils.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarui/inc/calenservicesfactory.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarui/inc/calennotificationhandler.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarui/inc/calenicons.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/inc/caleneditorsplugin.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/inc/caleneditorsplugin.inl</info>
+<info>Up-to-date: Z:/sf/app/organizer/inc/calendarvariant.hrh</info>
+<info>Up-to-date: z:/epoc32/data/z/private/10005901/backup_registration.xml</info>
+<info>Up-to-date: z:/epoc32/release/winscw/urel/z/private/10005901/backup_registration.xml</info>
+<info>Up-to-date: z:/epoc32/release/winscw/udeb/z/private/10005901/backup_registration.xml</info>
+<info>Up-to-date: z:/epoc32/rom/include/core/app/missedalarmindicatorplugin.iby</info>
+<info>Up-to-date: z:/epoc32/rom/include/language/app/missedalarmindicatorpluginresource.iby</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/loc/sc/missedalarmindicator.loc</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarui/inc/calsvrclient.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/loc/sc/calensvrmissedalarmmanager.loc</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarui/regionalplugins/inc/calenextrarowformatter.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarui/regionalplugins/inc/calenlunarinfo.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarui/regionalplugins/inc/calenlunarinfoprovider.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarui/regionalplugins/inc/calenlunarlocalizedinfo.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarui/regionalplugins/inc/calenlunarlocalizer.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarui/regionalplugins/inc/calenlunarpanic.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarui/regionalplugins/inc/CalenLunarPaths.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarui/regionalplugins/inc/CalenRegionalPluginUids.h</info>
+<info>Up-to-date: Z:/sf/app/organizer/calendarui/regionalplugins/inc/CalenSolarTerms.h</info>
+<info>Up-to-date: z:/epoc32/rom/include/core/app/agnentryui.iby</info>
+<info>Up-to-date: z:/epoc32/rom/include/core/app/mrutils.iby</info>
+<info>Up-to-date: z:/epoc32/rom/include/language/app/mrutilsuiresources.iby</info>
+<info>Up-to-date: z:/epoc32/rom/include/core/app/mrviewers.iby</info>
+<info>Up-to-date: z:/epoc32/rom/include/language/app/mrviewersuiresources.iby</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/loc/sc/MeetingRequest.loc</info>
+<info>Up-to-date: z:/epoc32/rom/include/core/app/clockengines.iby</info>
+<info>Up-to-date: z:/epoc32/tools/cenrep/data/src/keys_clockapp.xls</info>
+<info>Up-to-date: z:/epoc32/rom/config/confml_data/s60/clockapp.confml</info>
+<info>Up-to-date: z:/epoc32/rom/config/confml_data/s60/clockapp_101F874D.crml</info>
+<info>Up-to-date: z:/epoc32/rom/config/confml_data/s60/clockapp_101F8876.crml</info>
+<info>Up-to-date: z:/epoc32/data/z/private/10005906/backup_registration.xml</info>
+<info>Up-to-date: z:/epoc32/release/winscw/udeb/z/private/10005906/backup_registration.xml</info>
+<info>Up-to-date: z:/epoc32/release/winscw/urel/z/private/10005906/backup_registration.xml</info>
+<info>Up-to-date: z:/epoc32/data/z/private/200159A2/backup_registration.xml</info>
+<info>Up-to-date: z:/epoc32/release/winscw/udeb/z/private/200159A2/backup_registration.xml</info>
+<info>Up-to-date: z:/epoc32/release/winscw/urel/z/private/200159A2/backup_registration.xml</info>
+<info>Up-to-date: z:/epoc32/data/z/private/10005903/backup_registration.xml</info>
+<info>Up-to-date: z:/epoc32/release/winscw/udeb/z/private/10005903/backup_registration.xml</info>
+<info>Up-to-date: z:/epoc32/release/winscw/urel/z/private/10005903/backup_registration.xml</info>
+<info>Up-to-date: z:/epoc32/data/Z/system/install/clock2_stub.sis</info>
+<info>Up-to-date: z:/epoc32/data/z/system/install/clocknitzplugin_stub.sis</info>
+<info>Up-to-date: z:/epoc32/data/z/system/install/clock2_server_stub.sis</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/loc/sc/adtupdater.loc</info>
+<info>Up-to-date: z:/epoc32/rom/include/core/app/adtupdater.iby</info>
+<info>Up-to-date: z:/epoc32/rom/include/language/app/adtupdater_resource.iby</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/loc/sc/clockalarmeditor.loc</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/loc/sc/clkdatetimeview.loc</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/loc/sc/clockapp.loc</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/loc/sc/timezonelocalization.loc</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/loc/sc/stopwatchindicatorplugin.loc</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/loc/sc/clkindicatorpaneplugin.loc</info>
+<info>Up-to-date: z:/epoc32/release/wins/udeb/z/private/1020383E/tzdb.dbz</info>
+<info>Up-to-date: z:/epoc32/release/wins/urel/z/private/1020383E/tzdb.dbz</info>
+<info>Up-to-date: z:/epoc32/release/winscw/udeb/z/private/1020383E/tzdb.dbz</info>
+<info>Up-to-date: z:/epoc32/release/winscw/urel/z/private/1020383E/tzdb.dbz</info>
+<info>Up-to-date: z:/epoc32/release/thumb/udeb/z/private/1020383E/tzdb.dbz</info>
+<info>Up-to-date: z:/epoc32/release/thumb/urel/z/private/1020383E/tzdb.dbz</info>
+<info>Up-to-date: z:/epoc32/data/z/private/1020383E/tzdb.dbz</info>
+<info>Up-to-date: z:/epoc32/rom/include/core/app/clock.iby</info>
+<info>Up-to-date: z:/epoc32/rom/include/language/app/clockresources.iby</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/loc/sc/alarmeditorapp.loc</info>
+<info>Up-to-date: z:/epoc32/rom/include/core/app/alarmeditorapp.iby</info>
+<info>Up-to-date: z:/epoc32/data/Z/private/100012a5/policy/101F8878.spd</info>
+<info>Up-to-date: z:/epoc32/release/winscw/UDEB/Z/private/100012a5/policy/101F8878.spd</info>
+<info>Up-to-date: z:/epoc32/release/winscw/UREL/Z/private/100012a5/policy/101F8878.spd</info>
+<info>Up-to-date: z:/epoc32/data/Z/private/10005907/backup_registration.xml</info>
+<info>Up-to-date: z:/epoc32/release/winscw/UDEB/Z/private/10005907/backup_registration.xml</info>
+<info>Up-to-date: z:/epoc32/release/winscw/UREL/Z/private/10005907/backup_registration.xml</info>
+<info>Up-to-date: z:/epoc32/rom/include/core/app/Notepad.iby</info>
+<info>Up-to-date: z:/epoc32/rom/include/core/app/Npdviewer.iby</info>
+<info>Up-to-date: z:/epoc32/rom/include/core/app/Npdlib.iby</info>
+<info>Up-to-date: z:/epoc32/rom/include/core/app/npdsmla.iby</info>
+<info>Up-to-date: z:/epoc32/rom/include/language/app/NotepadResources.iby</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/loc/sc/Notepad.loc</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/loc/sc/NpdLib.loc</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/loc/sc/NpdTemp.loc</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/loc/sc/101F85F8.loc</info>
+<info>Up-to-date: z:/epoc32/rom/include/core/app/TxtRecog.iby</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/loc/sc/srchuiindevice.loc</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/loc/sc/srchuiresultview.loc</info>
+<info>Up-to-date: Z:/sf/app/organizer/inc/srchuicustomservice.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/loc/sc/gnrlsrchui.loc</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/loc/sc/srchuiapp.loc</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/loc/sc/srchaiwprovidermenu.loc</info>
+<info>Up-to-date: z:/epoc32/rom/include/core/app/searchapp.iby</info>
+<info>Up-to-date: z:/epoc32/rom/include/language/app/searchappresources.iby</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/cmrmailboxutils.inl</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/cmrmailboxutils.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/ICalInternalCRKeys.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/MeetingRequestUids.hrh</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/CalenExporter.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/agnexportobserver.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/agnimportobserver.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/CalenImporter.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/calenlauncher.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/searchcontent.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/searchresult.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/searchlightresult.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/searchdocumentid.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/searchquery.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/searchcondition.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/searchiconinfo.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/searchtextsnippet.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/searchsinglecondition.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/searchbooleancondition.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/searchfield.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/searchsnippetcreator.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/searchtextsearcher.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/searchtextsearcherobserver.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/searchclientsession.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/searcherrors.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/searchsessionobservers.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/searchcontentsearcher.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/searchplugin.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/searchplugin.inl</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/searchpluginobserver.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/searchcommon.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/searchcommon.hrh</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/searchcscommon.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/almconst.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/alarmuidomainpskeys.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/CalendarInternalCRKeys.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/CalendarDomainCRKeys.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/clockdomaincrkeys.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/clockalarmeditor.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/secondarydisplay/alarmuiSecondaryDisplay.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/srchuisettingsplugininterface.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/srchuisettingsplugininterface.inl</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/srchuisettingsview.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/MAgnEntryUi.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/CAgnEntryUi.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/CAgnEntryUi.inl</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/CMRUtils.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/CMRUtils.inl</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/MRUtilsApiExt.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/MMRUtilsTombsExt.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/MRCommands.hrh</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/CMRViewers.h</info>
+<info>Up-to-date: z:/epoc32/include/platform/app/CMRViewers.inl</info>
+<info>Up-to-date: z:/epoc32/include/app/CalenInterimUtils2.h</info>
+<info>Up-to-date: z:/epoc32/include/app/NpdApi.h</info>
+<warning>No objects found in XML file z:/epoc32/tools/makefile_templates\s60\mifconv_templates\layers.sysdef.xml</warning>
+<warning>Duplicate interface 's60.mifconv' (in 'z:/epoc32/tools/makefile_templates\s60\mifconv.xml' and 'z:/epoc32/tools/makefile_templates\s60\mifconv_templates\mifconv.xml')</warning>
+<info>Processing Z:/sf/app/organizer/officeappeng/sheeteng/group/SHENG.MMP for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/officeappeng/wordeng/group/WPENG.MMP for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/pimappservices/calendarvcalplugin/group/agnversit.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/pimappsupport/chinesecalendarconverter/group/CCon.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/alarmengines/missedalarmstore/group/missedalarmstore.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/calendarengines/versit2/group/versit2.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/calendarengines/agnversit2/group/agnversit2.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/calendarengines/caleninterimutils/group/CalenInterimUtils2.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/calendarengines/calenimp/group/CalenImp.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/calendarengines/calenlauncher/group/calenlauncher.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/calendarengines/caldav/group/CalDavClient.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/calendarengines/caldav/group/CalDavServer.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/calendarengines/caldav/group/CalDavTest.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/meetingrequestEngines/mrmailboxutils/group/mrmailboxutils.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/searchfw/coresearchfw/group/searchutilities.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/searchfw/coresearchfw/group/searchclient.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/searchfw/coresearchfw/group/searchserver.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/searchfw/plugins/notessearchplugin/group/notessearchplugin.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/searchfw/plugins/filesplugin/group/filesplugin.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/searchfw/plugins/calendarplugin/group/calendarsearchplugin.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/searchfw/plugins/contactsplugin/group/contactsplugin.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/searchfw/plugins/messagingplugin/group/messagessearchplugin.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/searchfw/plugins/multimediaplugin/group/multimediasearchplugin.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/alarmui/group/almalert.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/alarmui/group/aknalarmservice.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/calendarui/commonutils/group/commonutils.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/calendarui/globaldata/group/calenglobaldata.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/calendarui/settings/settingsui/group/calensettingsui.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/calendarui/settings/gsplugin/group/calengsplugin.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/calendarui/customisationmanager/group/calencustomisationmanager.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/calendarui/views/group/calenviews.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/calendarui/controller/group/calencontroller.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/calendarui/editors/group/calendefaulteditors.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/calendarui/application/group/calendar.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/calendarui/missedalarmindicatorplugin/group/missedalarmindicatorplugin.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/calendarui/server/calensvrclient/group/calensvrclient.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/calendarui/server/calensvr/group/calensvr.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/calendarui/regionalplugins/calenregionalutil/group/calenregionalutil.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/calendarui/caldav/group/calencaldavplugin.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/meetingui/agnentryui/group/agnentryui.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/clock2/clockengines/clocktimezoneresolver/group/clocktimezoneresolver.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/clock2/clockengines/clocktimesourceinterface/group/clocktimesourceinterface.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/clock2/clockengines/clocknitzplugin/group/clocknitzplugin.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/clock2/clockengines/utilities/clockecomlistener/group/clockecomlistener.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/clock2/clockengines/clockserver/client/group/clockserverclient.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/clock2/clockengines/clockserver/server/group/clockserver.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/clock2/clockui/adtupdater/group/adtupdater.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/clock2/clockui/uiengine/countdownengine/group/countdownengine.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/clock2/clockui/uiengine/stopwatchengine/group/stopwatchengine.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/clock2/clockui/uilayer/clkdatetimeview/group/clkdatetimeview.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/clock2/clockui/plugins/datetimeviewplugin/group/clkdatetimeviewplugin.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/clock2/clockui/plugins/stopwatchindicatorplugin/group/stopwatchindicatorplugin.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/clock2/clockui/plugins/clockindicatorpaneplugin/group/clockindicatorpaneplugin.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/clock2/clockui/uilayer/clockalarmeditor/group/clockalarmeditor.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/clock2/clockui/uilayer/clockcityselectionlist/group/clockcityselectionlist.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/clock2/clockui/uilayer/group/clock.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/clock2/clockui/uimodel/group/clkuimodel.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/clock2/clockui/alarmeditorapp/group/alarmeditorapp.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/notepad/notepad1/group/NpdLib.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/notepad/notepad1/group/Notepad.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/notepad/notepad1/group/NpdViewer.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/notepad/notepad1/SyncMLAdapter/group/nsmldsnotepaddataprovider.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/notepad/txtrecog/group/TxtRecog.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/searchui/searchapp/srchuicommon/group/srchuicommon.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/searchui/searchapp/plugins/indevicesearch/group/srchuiindeviceserviceplugin.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/searchui/searchapp/plugins/resultviewerplugin/group/srchuiresviewplugin.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/searchui/searchapp/srchuigenui/group/srchuigenui.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/searchui/searchapp/srchuiapp/group/srchuiapp.mmp for platform winscw_udeb</info>
+<info>Processing Z:/sf/app/organizer/searchui/searchapp/srchaiwprovider/group/srchaiwprovider.mmp for platform winscw_udeb</info>
+<info>Buildable specification group 'ALL'</info>
+<info>Buildable specification 'export_0'</info>
+<info>Buildable specification 'build_0'</info>
+<info>Running C:/Symbian/Tools/PDT_1.0/raptor/bin/sbs_descramble.exe sbs3882447167 start</info>
+<info>Making z:/epoc32/build/Makefile.export</info>
+<info>Executing 'C:/Symbian/Tools/PDT_1.0/raptor/win32/mingw/bin/make.exe HAVE_ORDERONLY=1 -r -f "z:/epoc32/build/Makefile.export" -k -j 4  DESCRAMBLE="C:/Symbian/Tools/PDT_1.0/raptor/bin/sbs_descramble.exe sbs3882447167"'</info>
+<info>NOT generating CLEAN targets as no CLEAN target was requested </info>
+<info>NOT generating WHAT targets as WHAT target not requested </info>
+make.exe: Nothing to be done for `EXPORT'.
+<info>Making z:/epoc32/build/Makefile.bitmap</info>
+<info>Executing 'C:/Symbian/Tools/PDT_1.0/raptor/win32/mingw/bin/make.exe HAVE_ORDERONLY=1 -r -f "z:/epoc32/build/Makefile.bitmap" -k -j 4  DESCRAMBLE="C:/Symbian/Tools/PDT_1.0/raptor/bin/sbs_descramble.exe sbs3882447167"'</info>
+<info>NOT generating CLEAN targets as no CLEAN target was requested </info>
+<info>NOT generating WHAT targets as WHAT target not requested </info>
+true
+true
+true
+true
+true
+<info>Making z:/epoc32/build/Makefile.resource</info>
+<info>Executing 'C:/Symbian/Tools/PDT_1.0/raptor/win32/mingw/bin/make.exe HAVE_ORDERONLY=1 -r -f "z:/epoc32/build/Makefile.resource" -k -j 4  DESCRAMBLE="C:/Symbian/Tools/PDT_1.0/raptor/bin/sbs_descramble.exe sbs3882447167"'</info>
+<info>NOT generating CLEAN targets as no CLEAN target was requested </info>
+<info>NOT generating WHAT targets as WHAT target not requested </info>
+<info>Making z:/epoc32/build/Makefile.default</info>
+<info>Executing 'C:/Symbian/Tools/PDT_1.0/raptor/win32/mingw/bin/make.exe HAVE_ORDERONLY=1 -r -f "z:/epoc32/build/Makefile.default" -k -j 4  DESCRAMBLE="C:/Symbian/Tools/PDT_1.0/raptor/bin/sbs_descramble.exe sbs3882447167"'</info>
+<info>NOT generating CLEAN targets as no CLEAN target was requested </info>
+<info>NOT generating WHAT targets as WHAT target not requested </info>
+<warning project='Z:/sf/app/organizer/calendarengines/caldav/group/CalDavClient.mmp' component='Z:/sf/app/organizer/group/bld.inf'>Unfrozen Exports in build for winscw/udeb</warning> 
+<recipe name='extension_makefile' target='01c417b2e14b8cdf8b96c81af187c4f3_MAKMAKE' host='PC213502752220' layer='app' component='organizer' bldinf='Z:/sf/app/organizer/group/bld.inf' mmp='' config='winscw_udeb' platform='WINSCW' phase='ALL' source=''>
+<![CDATA[
++ EPOCROOT=z:
++ PLATFORM=WINSCW
++ TO_ROOT=
++ TO_BLDINF=Z:/sf/app/organizer/group
++ EPOCBLD=z:/epoc32/build/organizer/c_87eda37825f2ef06
++ CFG=udeb
++ RMDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rmdir.exe
++ RM=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
++ ERASE=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
++ MKDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/mkdir.exe
++ CP=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/cp.exe
++ MAKEFILENAME=
++ DIRECTORY=Z:/sf/app/organizer/searchui/searchapp/plugins/resultviewerplugin/group
++ EXTMAKEFILENAME=srchuiresviewpluginicons.mk
++ DEPENDENCIES=
++ TOOL=
++ RVCT22LIB=
++ RVCT22INC=
++ RVCT22BIN=
++ MAKEVAR='"z:/epoc32/tools/make.exe"'
++ EXTMAKEFILETARGET=MAKMAKE
++ export 'EPOCROOT=z:\'
++ EPOCROOT='z:\'
++ export CFG=UDEB
++ CFG=UDEB
++ z:/epoc32/tools/make.exe -C 'Z:\sf\app\organizer\searchui\searchapp\plugins\resultviewerplugin\group' -f srchuiresviewpluginicons.mk CFG=UDEB 'EPOCBLD=z:\epoc32\build\organizer\c_87eda37825f2ef06' 'TO_BLDINF=Z:\sf\app\organizer\group' PLATFORM=WINSCW MAKMAKE
+z:\epoc32\tools\make.exe[1]: Entering directory `Z:/sf/app/organizer/searchui/searchapp/plugins/resultviewerplugin/group'
+z:\epoc32\tools\make.exe[1]: Leaving directory `Z:/sf/app/organizer/searchui/searchapp/plugins/resultviewerplugin/group'
+]]><time start='1251137376.093750000' elapsed='0.137' />
++ RV=0
++ set +x
+<status exit='ok' attempt='1' />
+</recipe>
+<recipe name='extension_makefile' target='299253e6ab3a2b70a0acf7840baa42df_MAKMAKE' host='PC213502752220' layer='app' component='organizer' bldinf='Z:/sf/app/organizer/group/bld.inf' mmp='' config='winscw_udeb' platform='WINSCW' phase='ALL' source=''>
+<![CDATA[
++ EPOCROOT=z:
++ PLATFORM=WINSCW
++ TO_ROOT=
++ TO_BLDINF=Z:/sf/app/organizer/group
++ EPOCBLD=z:/epoc32/build/organizer/c_87eda37825f2ef06
++ CFG=udeb
++ RMDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rmdir.exe
++ RM=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
++ ERASE=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
++ MKDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/mkdir.exe
++ CP=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/cp.exe
++ MAKEFILENAME=
++ DIRECTORY=Z:/sf/app/organizer/searchui/searchapp/srchuiapp/group
++ EXTMAKEFILENAME=srchuiappicons.mk
++ DEPENDENCIES=
++ TOOL=
++ RVCT22LIB=
++ RVCT22INC=
++ RVCT22BIN=
++ MAKEVAR='"z:/epoc32/tools/make.exe"'
++ EXTMAKEFILETARGET=MAKMAKE
++ export 'EPOCROOT=z:\'
++ EPOCROOT='z:\'
++ export CFG=UDEB
++ CFG=UDEB
++ z:/epoc32/tools/make.exe -C 'Z:\sf\app\organizer\searchui\searchapp\srchuiapp\group' -f srchuiappicons.mk CFG=UDEB 'EPOCBLD=z:\epoc32\build\organizer\c_87eda37825f2ef06' 'TO_BLDINF=Z:\sf\app\organizer\group' PLATFORM=WINSCW MAKMAKE
+z:\epoc32\tools\make.exe[1]: Entering directory `Z:/sf/app/organizer/searchui/searchapp/srchuiapp/group'
+z:\epoc32\tools\make.exe[1]: Leaving directory `Z:/sf/app/organizer/searchui/searchapp/srchuiapp/group'
+]]><time start='1251137376.187500000' elapsed='0.109' />
++ RV=0
++ set +x
+<status exit='ok' attempt='1' />
+</recipe>
+<recipe name='extension_makefile' target='a7e278cc5a59319fa865c836a9737763_MAKMAKE' host='PC213502752220' layer='app' component='organizer' bldinf='Z:/sf/app/organizer/group/bld.inf' mmp='' config='winscw_udeb' platform='WINSCW' phase='ALL' source=''>
+<![CDATA[
++ EPOCROOT=z:
++ PLATFORM=WINSCW
++ TO_ROOT=
++ TO_BLDINF=Z:/sf/app/organizer/group
++ EPOCBLD=z:/epoc32/build/organizer/c_87eda37825f2ef06
++ CFG=udeb
++ RMDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rmdir.exe
++ RM=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
++ ERASE=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
++ MKDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/mkdir.exe
++ CP=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/cp.exe
++ MAKEFILENAME=
++ DIRECTORY=Z:/sf/app/organizer/searchui/searchapp/srchuigenui/group
++ EXTMAKEFILENAME=GnrlSearchUIIcons.mk
++ DEPENDENCIES=
++ TOOL=
++ RVCT22LIB=
++ RVCT22INC=
++ RVCT22BIN=
++ MAKEVAR='"z:/epoc32/tools/make.exe"'
++ EXTMAKEFILETARGET=MAKMAKE
++ export 'EPOCROOT=z:\'
++ EPOCROOT='z:\'
++ export CFG=UDEB
++ CFG=UDEB
++ z:/epoc32/tools/make.exe -C 'Z:\sf\app\organizer\searchui\searchapp\srchuigenui\group' -f GnrlSearchUIIcons.mk CFG=UDEB 'EPOCBLD=z:\epoc32\build\organizer\c_87eda37825f2ef06' 'TO_BLDINF=Z:\sf\app\organizer\group' PLATFORM=WINSCW MAKMAKE
+z:\epoc32\tools\make.exe[1]: Entering directory `Z:/sf/app/organizer/searchui/searchapp/srchuigenui/group'
+z:\epoc32\tools\make.exe[1]: Leaving directory `Z:/sf/app/organizer/searchui/searchapp/srchuigenui/group'
+]]><time start='1251137376.265625000' elapsed='0.123' />
++ RV=0
++ set +x
+<status exit='ok' attempt='1' />
+</recipe>
+<recipe name='extension_makefile' target='c1a066120fdf384da03453f2e7613ef4_MAKMAKE' host='PC213502752220' layer='app' component='organizer' bldinf='Z:/sf/app/organizer/group/bld.inf' mmp='' config='winscw_udeb' platform='WINSCW' phase='ALL' source=''>
+<![CDATA[
++ EPOCROOT=z:
++ PLATFORM=WINSCW
++ TO_ROOT=
++ TO_BLDINF=Z:/sf/app/organizer/group
++ EPOCBLD=z:/epoc32/build/organizer/c_87eda37825f2ef06
++ CFG=udeb
++ RMDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rmdir.exe
++ RM=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
++ ERASE=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
++ MKDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/mkdir.exe
++ CP=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/cp.exe
++ MAKEFILENAME=
++ DIRECTORY=Z:/sf/app/organizer/searchui/searchapp/plugins/indevicesearch/group
++ EXTMAKEFILENAME=indevicesearchicons.mk
++ DEPENDENCIES=
++ TOOL=
++ RVCT22LIB=
++ RVCT22INC=
++ RVCT22BIN=
++ MAKEVAR='"z:/epoc32/tools/make.exe"'
++ EXTMAKEFILETARGET=MAKMAKE
++ export 'EPOCROOT=z:\'
++ EPOCROOT='z:\'
++ export CFG=UDEB
++ CFG=UDEB
++ z:/epoc32/tools/make.exe -C 'Z:\sf\app\organizer\searchui\searchapp\plugins\indevicesearch\group' -f indevicesearchicons.mk CFG=UDEB 'EPOCBLD=z:\epoc32\build\organizer\c_87eda37825f2ef06' 'TO_BLDINF=Z:\sf\app\organizer\group' PLATFORM=WINSCW MAKMAKE
+z:\epoc32\tools\make.exe[1]: Entering directory `Z:/sf/app/organizer/searchui/searchapp/plugins/indevicesearch/group'
+z:\epoc32\tools\make.exe[1]: Leaving directory `Z:/sf/app/organizer/searchui/searchapp/plugins/indevicesearch/group'
+]]><time start='1251137376.329125000' elapsed='0.138' />
++ RV=0
++ set +x
+<status exit='ok' attempt='1' />
+</recipe>
+<recipe name='win32compile2object' target='z:/epoc32/build/organizer/c_87eda37825f2ef06/!caldavserver_exe/winscw/udeb/CalDavServer.o' host='PC213502752220' layer='app' component='organizer' bldinf='Z:/sf/app/organizer/group/bld.inf' mmp='Z:/sf/app/organizer/calendarengines/caldav/group/CalDavServer.mmp' config='winscw_udeb' platform='winscw' phase='ALL' source='Z:/sf/app/organizer/calendarengines/caldav/src/CalDavServer.cpp'>
+<![CDATA[
++ mwccsym2.exe -c -align 4 -warnings on -w nohidevirtual,nounusedexpr -msgstyle gcc -enum int -str pool -exc ms -trigraphs on -cwd source -g -O0 -inline off -runtime staticmulti -wchar_t off -nostdinc -gccdepends -MD -d __SYMBIAN32__ -d __CW32__ -d __WINS__ -d __WINSCW__ -d __SUPPORT_CPP_EXCEPTIONS__ -d _UNICODE -d _DEBUG -d __EXE__ -i- -i Z:/sf/app/organizer/calendarengines/caldav/inc -i z:/epoc32/include -i z:/Epoc32/include -i z:/Epoc32/include/app -i z:/Epoc32/include/mw -i z:/Epoc32/include/platform -i z:/Epoc32/include/platform/mw -i z:/Epoc32/include/platform/app -include bldvariant.hrh -o 'z:/epoc32/build/organizer/c_87eda37825f2ef06/!caldavserver_exe/winscw/udeb/CalDavServer.o' Z:/sf/app/organizer/calendarengines/caldav/src/CalDavServer.cpp
++ C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/sed.exe 's#\\\(.\)#/\1#g;s#/ #\\ #g;s#\([A-Za-z]:\)\\#\1/#g;1,1s#.*: .* \(.\)\?$#    z:/epoc32/build/organizer/c_87eda37825f2ef06/!caldavserver_exe/winscw/udeb/CalDavServer.o: Z:/sf/app/organizer/calendarengines/caldav/src/CalDavServer.cpp \1#' 'z:/epoc32/build/organizer/c_87eda37825f2ef06/!caldavserver_exe/winscw/udeb/CalDavServer.dep'
+]]><time start='1251137378.062500000' elapsed='0.876' />
++ RV=0
++ set +x
+<status exit='ok' attempt='1' />
+</recipe>
+<recipe name='win32compile2object' target='z:/epoc32/build/organizer/c_87eda37825f2ef06/!caldavserver_exe/winscw/udeb/CalDavServerSession.o' host='PC213502752220' layer='app' component='organizer' bldinf='Z:/sf/app/organizer/group/bld.inf' mmp='Z:/sf/app/organizer/calendarengines/caldav/group/CalDavServer.mmp' config='winscw_udeb' platform='winscw' phase='ALL' source='Z:/sf/app/organizer/calendarengines/caldav/src/CalDavServerSession.cpp'>
+<![CDATA[
++ mwccsym2.exe -c -align 4 -warnings on -w nohidevirtual,nounusedexpr -msgstyle gcc -enum int -str pool -exc ms -trigraphs on -cwd source -g -O0 -inline off -runtime staticmulti -wchar_t off -nostdinc -gccdepends -MD -d __SYMBIAN32__ -d __CW32__ -d __WINS__ -d __WINSCW__ -d __SUPPORT_CPP_EXCEPTIONS__ -d _UNICODE -d _DEBUG -d __EXE__ -i- -i Z:/sf/app/organizer/calendarengines/caldav/inc -i z:/epoc32/include -i z:/Epoc32/include -i z:/Epoc32/include/app -i z:/Epoc32/include/mw -i z:/Epoc32/include/platform -i z:/Epoc32/include/platform/mw -i z:/Epoc32/include/platform/app -include bldvariant.hrh -o 'z:/epoc32/build/organizer/c_87eda37825f2ef06/!caldavserver_exe/winscw/udeb/CalDavServerSession.o' Z:/sf/app/organizer/calendarengines/caldav/src/CalDavServerSession.cpp
++ C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/sed.exe 's#\\\(.\)#/\1#g;s#/ #\\ #g;s#\([A-Za-z]:\)\\#\1/#g;1,1s#.*: .* \(.\)\?$#    z:/epoc32/build/organizer/c_87eda37825f2ef06/!caldavserver_exe/winscw/udeb/CalDavServerSession.o: Z:/sf/app/organizer/calendarengines/caldav/src/CalDavServerSession.cpp \1#' 'z:/epoc32/build/organizer/c_87eda37825f2ef06/!caldavserver_exe/winscw/udeb/CalDavServerSession.dep'
+]]><time start='1251137378.585125000' elapsed='0.448' />
++ RV=0
++ set +x
+<status exit='ok' attempt='1' />
+</recipe>
+<recipe name='win32compile2object' target='z:/epoc32/build/organizer/c_87eda37825f2ef06/!caldavserver_exe/winscw/udeb/caldavutils.o' host='PC213502752220' layer='app' component='organizer' bldinf='Z:/sf/app/organizer/group/bld.inf' mmp='Z:/sf/app/organizer/calendarengines/caldav/group/CalDavServer.mmp' config='winscw_udeb' platform='winscw' phase='ALL' source='Z:/sf/app/organizer/calendarengines/caldav/src/caldavutils.cpp'>
+<![CDATA[
++ mwccsym2.exe -c -align 4 -warnings on -w nohidevirtual,nounusedexpr -msgstyle gcc -enum int -str pool -exc ms -trigraphs on -cwd source -g -O0 -inline off -runtime staticmulti -wchar_t off -nostdinc -gccdepends -MD -d __SYMBIAN32__ -d __CW32__ -d __WINS__ -d __WINSCW__ -d __SUPPORT_CPP_EXCEPTIONS__ -d _UNICODE -d _DEBUG -d __EXE__ -i- -i Z:/sf/app/organizer/calendarengines/caldav/inc -i z:/epoc32/include -i z:/Epoc32/include -i z:/Epoc32/include/app -i z:/Epoc32/include/mw -i z:/Epoc32/include/platform -i z:/Epoc32/include/platform/mw -i z:/Epoc32/include/platform/app -include bldvariant.hrh -o 'z:/epoc32/build/organizer/c_87eda37825f2ef06/!caldavserver_exe/winscw/udeb/caldavutils.o' Z:/sf/app/organizer/calendarengines/caldav/src/caldavutils.cpp
++ C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/sed.exe 's#\\\(.\)#/\1#g;s#/ #\\ #g;s#\([A-Za-z]:\)\\#\1/#g;1,1s#.*: .* \(.\)\?$#    z:/epoc32/build/organizer/c_87eda37825f2ef06/!caldavserver_exe/winscw/udeb/caldavutils.o: Z:/sf/app/organizer/calendarengines/caldav/src/caldavutils.cpp \1#' 'z:/epoc32/build/organizer/c_87eda37825f2ef06/!caldavserver_exe/winscw/udeb/caldavutils.dep'
+]]><time start='1251137378.343750000' elapsed='0.712' />
++ RV=0
++ set +x
+<status exit='ok' attempt='1' />
+</recipe>
+<recipe name='win32generateUIDcpp' target='z:/epoc32/build/organizer/c_87eda37825f2ef06/!caldavserver_exe/winscw/udeb/!CalDavServer.UID.CPP' host='PC213502752220' layer='app' component='organizer' bldinf='Z:/sf/app/organizer/group/bld.inf' mmp='Z:/sf/app/organizer/calendarengines/caldav/group/CalDavServer.mmp' config='winscw_udeb' platform='winscw' phase='ALL' source=''>
+<![CDATA[
++ echo '// SBS-generated uid source file'
++ echo '#include <e32cmn.h>'
++ echo '#pragma data_seg(".SYMBIAN")'
++ echo '__EMULATOR_IMAGE_HEADER2(0x1000007a,0x00000000,0xe800002c,EPriorityForeground,0x0001a130u,0x00000000u,0xe800002c,0x70000001,0x00010000,0)'
++ echo '#pragma data_seg()'
+]]><time start='1251137379.724750000' elapsed='0.011' />
++ RV=0
++ set +x
+<status exit='ok' attempt='1' />
+</recipe>
+<recipe name='win32compile2object' target='z:/epoc32/build/organizer/c_87eda37825f2ef06/!caldavserver_exe/winscw/udeb/httpclient.o' host='PC213502752220' layer='app' component='organizer' bldinf='Z:/sf/app/organizer/group/bld.inf' mmp='Z:/sf/app/organizer/calendarengines/caldav/group/CalDavServer.mmp' config='winscw_udeb' platform='winscw' phase='ALL' source='Z:/sf/app/organizer/calendarengines/caldav/src/httpclient.cpp'>
+<![CDATA[
++ mwccsym2.exe -c -align 4 -warnings on -w nohidevirtual,nounusedexpr -msgstyle gcc -enum int -str pool -exc ms -trigraphs on -cwd source -g -O0 -inline off -runtime staticmulti -wchar_t off -nostdinc -gccdepends -MD -d __SYMBIAN32__ -d __CW32__ -d __WINS__ -d __WINSCW__ -d __SUPPORT_CPP_EXCEPTIONS__ -d _UNICODE -d _DEBUG -d __EXE__ -i- -i Z:/sf/app/organizer/calendarengines/caldav/inc -i z:/epoc32/include -i z:/Epoc32/include -i z:/Epoc32/include/app -i z:/Epoc32/include/mw -i z:/Epoc32/include/platform -i z:/Epoc32/include/platform/mw -i z:/Epoc32/include/platform/app -include bldvariant.hrh -o 'z:/epoc32/build/organizer/c_87eda37825f2ef06/!caldavserver_exe/winscw/udeb/httpclient.o' Z:/sf/app/organizer/calendarengines/caldav/src/httpclient.cpp
+sf\app\organizer\calendarengines\caldav\src\httpclient.cpp:365: warning: variable / argument 'aAuthenticationType' is not used in function
++ C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/sed.exe 's#\\\(.\)#/\1#g;s#/ #\\ #g;s#\([A-Za-z]:\)\\#\1/#g;1,1s#.*: .* \(.\)\?$#    z:/epoc32/build/organizer/c_87eda37825f2ef06/!caldavserver_exe/winscw/udeb/httpclient.o: Z:/sf/app/organizer/calendarengines/caldav/src/httpclient.cpp \1#' 'z:/epoc32/build/organizer/c_87eda37825f2ef06/!caldavserver_exe/winscw/udeb/httpclient.dep'
+]]><time start='1251137378.571875000' elapsed='1.230' />
++ RV=0
++ set +x
+<status exit='ok' attempt='1' />
+</recipe>
+<recipe name='win32compile2object' target='z:/epoc32/build/organizer/c_87eda37825f2ef06/!caldavserver_exe/winscw/udeb/caldavenginemgr.o' host='PC213502752220' layer='app' component='organizer' bldinf='Z:/sf/app/organizer/group/bld.inf' mmp='Z:/sf/app/organizer/calendarengines/caldav/group/CalDavServer.mmp' config='winscw_udeb' platform='winscw' phase='ALL' source='Z:/sf/app/organizer/calendarengines/caldav/src/caldavenginemgr.cpp'>
+<![CDATA[
++ mwccsym2.exe -c -align 4 -warnings on -w nohidevirtual,nounusedexpr -msgstyle gcc -enum int -str pool -exc ms -trigraphs on -cwd source -g -O0 -inline off -runtime staticmulti -wchar_t off -nostdinc -gccdepends -MD -d __SYMBIAN32__ -d __CW32__ -d __WINS__ -d __WINSCW__ -d __SUPPORT_CPP_EXCEPTIONS__ -d _UNICODE -d _DEBUG -d __EXE__ -i- -i Z:/sf/app/organizer/calendarengines/caldav/inc -i z:/epoc32/include -i z:/Epoc32/include -i z:/Epoc32/include/app -i z:/Epoc32/include/mw -i z:/Epoc32/include/platform -i z:/Epoc32/include/platform/mw -i z:/Epoc32/include/platform/app -include bldvariant.hrh -o 'z:/epoc32/build/organizer/c_87eda37825f2ef06/!caldavserver_exe/winscw/udeb/caldavenginemgr.o' Z:/sf/app/organizer/calendarengines/caldav/src/caldavenginemgr.cpp
+sf\app\organizer\calendarengines\caldav\src\caldavenginemgr.cpp:96: warning: return value expected
++ C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/sed.exe 's#\\\(.\)#/\1#g;s#/ #\\ #g;s#\([A-Za-z]:\)\\#\1/#g;1,1s#.*: .* \(.\)\?$#    z:/epoc32/build/organizer/c_87eda37825f2ef06/!caldavserver_exe/winscw/udeb/caldavenginemgr.o: Z:/sf/app/organizer/calendarengines/caldav/src/caldavenginemgr.cpp \1#' 'z:/epoc32/build/organizer/c_87eda37825f2ef06/!caldavserver_exe/winscw/udeb/caldavenginemgr.dep'
+]]><time start='1251137379.718750000' elapsed='0.655' />
++ RV=0
++ set +x
+<status exit='ok' attempt='1' />
+</recipe>
+<recipe name='extension_makefile' target='c1a066120fdf384da03453f2e7613ef4_RESOURCE' host='PC213502752220' layer='app' component='organizer' bldinf='Z:/sf/app/organizer/group/bld.inf' mmp='' config='winscw_udeb' platform='WINSCW' phase='ALL' source=''>
+<![CDATA[
++ EPOCROOT=z:
++ PLATFORM=WINSCW
++ TO_ROOT=
++ TO_BLDINF=Z:/sf/app/organizer/group
++ EPOCBLD=z:/epoc32/build/organizer/c_87eda37825f2ef06
++ CFG=udeb
++ RMDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rmdir.exe
++ RM=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
++ ERASE=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
++ MKDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/mkdir.exe
++ CP=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/cp.exe
++ MAKEFILENAME=
++ DIRECTORY=Z:/sf/app/organizer/searchui/searchapp/plugins/indevicesearch/group
++ EXTMAKEFILENAME=indevicesearchicons.mk
++ DEPENDENCIES=
++ TOOL=
++ RVCT22LIB=
++ RVCT22INC=
++ RVCT22BIN=
++ MAKEVAR='"z:/epoc32/tools/make.exe"'
++ EXTMAKEFILETARGET=RESOURCE
++ export 'EPOCROOT=z:\'
++ EPOCROOT='z:\'
++ export CFG=UDEB
++ CFG=UDEB
++ z:/epoc32/tools/make.exe -C 'Z:\sf\app\organizer\searchui\searchapp\plugins\indevicesearch\group' -f indevicesearchicons.mk CFG=UDEB 'EPOCBLD=z:\epoc32\build\organizer\c_87eda37825f2ef06' 'TO_BLDINF=Z:\sf\app\organizer\group' PLATFORM=WINSCW RESOURCE
+z:\epoc32\tools\make.exe[1]: Entering directory `Z:/sf/app/organizer/searchui/searchapp/plugins/indevicesearch/group'
+mifconv \epoc32\release\WINSCW\UDEB\Z\RESOURCE\APPS\srchuiindevicesvg.MIF /h\epoc32\include\srchuiindevicesvg.MBG \
+/c8,8 qgn_indi_find_glass_advanced.svg \
+/c8,8 qgn_indi_find_glass.svg \
+/c8,8 qgn_prop_search_indevice
+
+Mifconv v3.1.4 - 17th April 2009
+Writing mbg: \epoc32\include\srchuiindevicesvg.MBG
+Loading file: z:\epoc32\BUILD\s60\icons\temp\s4k9g.tmp\z__epoc32_s60_icons_qgn_indi_find_glass_advanced.svgb
+Loading file: z:\epoc32\BUILD\s60\icons\temp\s4k9g.tmp\z__epoc32_s60_icons_qgn_indi_find_glass.svgb
+Loading file: z:\epoc32\BUILD\s60\icons\temp\s4k9g.tmp\z__epoc32_s60_icons_qgn_prop_search_indevice.svgb
+Writing mif: \epoc32\release\WINSCW\UDEB\Z\RESOURCE\APPS\srchuiindevicesvg.mif
+z:\epoc32\tools\make.exe[1]: Leaving directory `Z:/sf/app/organizer/searchui/searchapp/plugins/indevicesearch/group'
+]]><time start='1251137379.984375000' elapsed='1.103' />
++ RV=0
++ set +x
+<status exit='ok' attempt='1' />
+</recipe>
+<recipe name='extension_makefile' target='01c417b2e14b8cdf8b96c81af187c4f3_RESOURCE' host='PC213502752220' layer='app' component='organizer' bldinf='Z:/sf/app/organizer/group/bld.inf' mmp='' config='winscw_udeb' platform='WINSCW' phase='ALL' source=''>
+<![CDATA[
++ EPOCROOT=z:
++ PLATFORM=WINSCW
++ TO_ROOT=
++ TO_BLDINF=Z:/sf/app/organizer/group
++ EPOCBLD=z:/epoc32/build/organizer/c_87eda37825f2ef06
++ CFG=udeb
++ RMDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rmdir.exe
++ RM=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
++ ERASE=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
++ MKDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/mkdir.exe
++ CP=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/cp.exe
++ MAKEFILENAME=
++ DIRECTORY=Z:/sf/app/organizer/searchui/searchapp/plugins/resultviewerplugin/group
++ EXTMAKEFILENAME=srchuiresviewpluginicons.mk
++ DEPENDENCIES=
++ TOOL=
++ RVCT22LIB=
++ RVCT22INC=
++ RVCT22BIN=
++ MAKEVAR='"z:/epoc32/tools/make.exe"'
++ EXTMAKEFILETARGET=RESOURCE
++ export 'EPOCROOT=z:\'
++ EPOCROOT='z:\'
++ export CFG=UDEB
++ CFG=UDEB
++ z:/epoc32/tools/make.exe -C 'Z:\sf\app\organizer\searchui\searchapp\plugins\resultviewerplugin\group' -f srchuiresviewpluginicons.mk CFG=UDEB 'EPOCBLD=z:\epoc32\build\organizer\c_87eda37825f2ef06' 'TO_BLDINF=Z:\sf\app\organizer\group' PLATFORM=WINSCW RESOURCE
+z:\epoc32\tools\make.exe[1]: Entering directory `Z:/sf/app/organizer/searchui/searchapp/plugins/resultviewerplugin/group'
+mifconv \epoc32\release\WINSCW\UDEB\z\resource\apps\srchuiresviewpluginicons.mif /h\epoc32\include\srchuiresviewpluginicons.mbg \
+        /c24,8  qgn_indi_mmc_add.svg \
+        /c8,8 qgn_prop_search_indevice_title.svg
+
+Mifconv v3.1.4 - 17th April 2009
+Writing mbg: \epoc32\include\srchuiresviewpluginicons.mbg
+Loading file: z:\epoc32\BUILD\s60\icons\temp\s4leg.tmp\z__epoc32_s60_icons_qgn_indi_mmc_add.svgb
+Loading file: z:\epoc32\BUILD\s60\icons\temp\s4leg.tmp\z__epoc32_s60_icons_qgn_prop_search_indevice_title.svgb
+Writing mif: \epoc32\release\WINSCW\UDEB\z\resource\apps\srchuiresviewpluginicons.mif
+z:\epoc32\tools\make.exe[1]: Leaving directory `Z:/sf/app/organizer/searchui/searchapp/plugins/resultviewerplugin/group'
+]]><time start='1251137380.502000000' elapsed='0.719' />
++ RV=0
++ set +x
+<status exit='ok' attempt='1' />
+</recipe>
+<recipe name='extension_makefile' target='299253e6ab3a2b70a0acf7840baa42df_RESOURCE' host='PC213502752220' layer='app' component='organizer' bldinf='Z:/sf/app/organizer/group/bld.inf' mmp='' config='winscw_udeb' platform='WINSCW' phase='ALL' source=''>
+<![CDATA[
++ EPOCROOT=z:
++ PLATFORM=WINSCW
++ TO_ROOT=
++ TO_BLDINF=Z:/sf/app/organizer/group
++ EPOCBLD=z:/epoc32/build/organizer/c_87eda37825f2ef06
++ CFG=udeb
++ RMDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rmdir.exe
++ RM=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
++ ERASE=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
++ MKDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/mkdir.exe
++ CP=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/cp.exe
++ MAKEFILENAME=
++ DIRECTORY=Z:/sf/app/organizer/searchui/searchapp/srchuiapp/group
++ EXTMAKEFILENAME=srchuiappicons.mk
++ DEPENDENCIES=
++ TOOL=
++ RVCT22LIB=
++ RVCT22INC=
++ RVCT22BIN=
++ MAKEVAR='"z:/epoc32/tools/make.exe"'
++ EXTMAKEFILETARGET=RESOURCE
++ export 'EPOCROOT=z:\'
++ EPOCROOT='z:\'
++ export CFG=UDEB
++ CFG=UDEB
++ z:/epoc32/tools/make.exe -C 'Z:\sf\app\organizer\searchui\searchapp\srchuiapp\group' -f srchuiappicons.mk CFG=UDEB 'EPOCBLD=z:\epoc32\build\organizer\c_87eda37825f2ef06' 'TO_BLDINF=Z:\sf\app\organizer\group' PLATFORM=WINSCW RESOURCE
+z:\epoc32\tools\make.exe[1]: Entering directory `Z:/sf/app/organizer/searchui/searchapp/srchuiapp/group'
+mifconv \epoc32\release\WINSCW\UDEB\Z\RESOURCE\APPS\srchuiapp.MIF /h\epoc32\include\srchuiapp.MBG \
+/c8,8 qgn_menu_search.svg
+
+Mifconv v3.1.4 - 17th April 2009
+Writing mbg: \epoc32\include\srchuiapp.MBG
+Loading file: z:\epoc32\BUILD\s60\icons\temp\s4k34.tmp\z__epoc32_s60_icons_qgn_menu_search.svgb
+Writing mif: \epoc32\release\WINSCW\UDEB\Z\RESOURCE\APPS\srchuiapp.mif
+z:\epoc32\tools\make.exe[1]: Leaving directory `Z:/sf/app/organizer/searchui/searchapp/srchuiapp/group'
+]]><time start='1251137381.015625000' elapsed='0.407' />
++ RV=0
++ set +x
+<status exit='ok' attempt='1' />
+</recipe>
+<recipe name='extension_makefile' target='a7e278cc5a59319fa865c836a9737763_RESOURCE' host='PC213502752220' layer='app' component='organizer' bldinf='Z:/sf/app/organizer/group/bld.inf' mmp='' config='winscw_udeb' platform='WINSCW' phase='ALL' source=''>
+<![CDATA[
++ EPOCROOT=z:
++ PLATFORM=WINSCW
++ TO_ROOT=
++ TO_BLDINF=Z:/sf/app/organizer/group
++ EPOCBLD=z:/epoc32/build/organizer/c_87eda37825f2ef06
++ CFG=udeb
++ RMDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rmdir.exe
++ RM=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
++ ERASE=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
++ MKDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/mkdir.exe
++ CP=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/cp.exe
++ MAKEFILENAME=
++ DIRECTORY=Z:/sf/app/organizer/searchui/searchapp/srchuigenui/group
++ EXTMAKEFILENAME=GnrlSearchUIIcons.mk
++ DEPENDENCIES=
++ TOOL=
++ RVCT22LIB=
++ RVCT22INC=
++ RVCT22BIN=
++ MAKEVAR='"z:/epoc32/tools/make.exe"'
++ EXTMAKEFILETARGET=RESOURCE
++ export 'EPOCROOT=z:\'
++ EPOCROOT='z:\'
++ export CFG=UDEB
++ CFG=UDEB
++ z:/epoc32/tools/make.exe -C 'Z:\sf\app\organizer\searchui\searchapp\srchuigenui\group' -f GnrlSearchUIIcons.mk CFG=UDEB 'EPOCBLD=z:\epoc32\build\organizer\c_87eda37825f2ef06' 'TO_BLDINF=Z:\sf\app\organizer\group' PLATFORM=WINSCW RESOURCE
+z:\epoc32\tools\make.exe[1]: Entering directory `Z:/sf/app/organizer/searchui/searchapp/srchuigenui/group'
+mifconv \epoc32\release\WINSCW\UDEB\Z\RESOURCE\APPS\gnrlsearchuisvg.mif /h\epoc32\include\gnrlsearchuisvg.mbg \
+      /c8,8 Skin_Green\qgn_prop_checkbox_off.svg \
+        /c8,8 Skin_Green\qgn_prop_checkbox_on.svg \
+        /c8,8 qgn_prop_search_indevice_title.svg
+
+Mifconv v3.1.4 - 17th April 2009
+Writing mbg: \epoc32\include\gnrlsearchuisvg.mbg
+Loading file: z:\epoc32\BUILD\s60\icons\temp\s4kj0.tmp\z__epoc32_s60_icons_Skin_Green_qgn_prop_checkbox_off.svgb
+Loading file: z:\epoc32\BUILD\s60\icons\temp\s4kj0.tmp\z__epoc32_s60_icons_Skin_Green_qgn_prop_checkbox_on.svgb
+Loading file: z:\epoc32\BUILD\s60\icons\temp\s4kj0.tmp\z__epoc32_s60_icons_qgn_prop_search_indevice_title.svgb
+Writing mif: \epoc32\release\WINSCW\UDEB\Z\RESOURCE\APPS\gnrlsearchuisvg.mif
+z:\epoc32\tools\make.exe[1]: Leaving directory `Z:/sf/app/organizer/searchui/searchapp/srchuigenui/group'
+]]><time start='1251137380.593750000' elapsed='0.846' />
++ RV=0
++ set +x
+<status exit='ok' attempt='1' />
+</recipe>
+<recipe name='win32compile2object' target='z:/epoc32/build/organizer/c_87eda37825f2ef06/!caldavserver_exe/winscw/udeb/!CalDavServer_UID_.o' host='PC213502752220' layer='app' component='organizer' bldinf='Z:/sf/app/organizer/group/bld.inf' mmp='Z:/sf/app/organizer/calendarengines/caldav/group/CalDavServer.mmp' config='winscw_udeb' platform='winscw' phase='ALL' source='z:/epoc32/build/organizer/c_87eda37825f2ef06/!caldavserver_exe/winscw/udeb/!CalDavServer.UID.CPP'>
+<![CDATA[
++ mwccsym2.exe -c -align 4 -warnings on -w nohidevirtual,nounusedexpr -msgstyle gcc -enum int -str pool -exc ms -trigraphs on -cwd source -g -O0 -inline off -runtime staticmulti -wchar_t off -nostdinc -gccdepends -MD -d __SYMBIAN32__ -d __CW32__ -d __WINS__ -d __WINSCW__ -d __SUPPORT_CPP_EXCEPTIONS__ -d _UNICODE -d _DEBUG -d __EXE__ -i- -i Z:/sf/app/organizer/calendarengines/caldav/inc -i z:/epoc32/include -i z:/Epoc32/include -i z:/Epoc32/include/app -i z:/Epoc32/include/mw -i z:/Epoc32/include/platform -i z:/Epoc32/include/platform/mw -i z:/Epoc32/include/platform/app -include bldvariant.hrh -o 'z:/epoc32/build/organizer/c_87eda37825f2ef06/!caldavserver_exe/winscw/udeb/!CalDavServer_UID_.o' 'z:/epoc32/build/organizer/c_87eda37825f2ef06/!caldavserver_exe/winscw/udeb/!CalDavServer.UID.CPP'
++ C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/sed.exe 's#\\\(.\)#/\1#g;s#/ #\\ #g;s#\([A-Za-z]:\)\\#\1/#g;1,1s#.*: .* \(.\)\?$#    z:/epoc32/build/organizer/c_87eda37825f2ef06/!caldavserver_exe/winscw/udeb/!CalDavServer_UID_.o: z:/epoc32/build/organizer/c_87eda37825f2ef06/!caldavserver_exe/winscw/udeb/!CalDavServer.UID.CPP \1#' 'z:/epoc32/build/organizer/c_87eda37825f2ef06/!caldavserver_exe/winscw/udeb/!CalDavServer_UID_.dep'
+]]><time start='1251137381.625000000' elapsed='2.113' />
++ RV=0
++ set +x
+<status exit='ok' attempt='1' />
+</recipe>
+<recipe name='extension_makefile' target='a7e278cc5a59319fa865c836a9737763_LIB' host='PC213502752220' layer='app' component='organizer' bldinf='Z:/sf/app/organizer/group/bld.inf' mmp='' config='winscw_udeb' platform='WINSCW' phase='ALL' source=''>
+<![CDATA[
++ EPOCROOT=z:
++ PLATFORM=WINSCW
++ TO_ROOT=
++ TO_BLDINF=Z:/sf/app/organizer/group
++ EPOCBLD=z:/epoc32/build/organizer/c_87eda37825f2ef06
++ CFG=udeb
++ RMDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rmdir.exe
++ RM=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
++ ERASE=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
++ MKDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/mkdir.exe
++ CP=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/cp.exe
++ MAKEFILENAME=
++ DIRECTORY=Z:/sf/app/organizer/searchui/searchapp/srchuigenui/group
++ EXTMAKEFILENAME=GnrlSearchUIIcons.mk
++ DEPENDENCIES=
++ TOOL=
++ RVCT22LIB=
++ RVCT22INC=
++ RVCT22BIN=
++ MAKEVAR='"z:/epoc32/tools/make.exe"'
++ EXTMAKEFILETARGET=LIB
++ export 'EPOCROOT=z:\'
++ EPOCROOT='z:\'
++ export CFG=UDEB
++ CFG=UDEB
++ z:/epoc32/tools/make.exe -C 'Z:\sf\app\organizer\searchui\searchapp\srchuigenui\group' -f GnrlSearchUIIcons.mk CFG=UDEB 'EPOCBLD=z:\epoc32\build\organizer\c_87eda37825f2ef06' 'TO_BLDINF=Z:\sf\app\organizer\group' PLATFORM=WINSCW LIB
+z:\epoc32\tools\make.exe[1]: Entering directory `Z:/sf/app/organizer/searchui/searchapp/srchuigenui/group'
+z:\epoc32\tools\make.exe[1]: Leaving directory `Z:/sf/app/organizer/searchui/searchapp/srchuigenui/group'
+]]><time start='1251137383.680875000' elapsed='0.095' />
++ RV=0
++ set +x
+<status exit='ok' attempt='1' />
+</recipe>
+<recipe name='extension_makefile' target='01c417b2e14b8cdf8b96c81af187c4f3_LIB' host='PC213502752220' layer='app' component='organizer' bldinf='Z:/sf/app/organizer/group/bld.inf' mmp='' config='winscw_udeb' platform='WINSCW' phase='ALL' source=''>
+<![CDATA[
++ EPOCROOT=z:
++ PLATFORM=WINSCW
++ TO_ROOT=
++ TO_BLDINF=Z:/sf/app/organizer/group
++ EPOCBLD=z:/epoc32/build/organizer/c_87eda37825f2ef06
++ CFG=udeb
++ RMDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rmdir.exe
++ RM=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
++ ERASE=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
++ MKDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/mkdir.exe
++ CP=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/cp.exe
++ MAKEFILENAME=
++ DIRECTORY=Z:/sf/app/organizer/searchui/searchapp/plugins/resultviewerplugin/group
++ EXTMAKEFILENAME=srchuiresviewpluginicons.mk
++ DEPENDENCIES=
++ TOOL=
++ RVCT22LIB=
++ RVCT22INC=
++ RVCT22BIN=
++ MAKEVAR='"z:/epoc32/tools/make.exe"'
++ EXTMAKEFILETARGET=LIB
++ export 'EPOCROOT=z:\'
++ EPOCROOT='z:\'
++ export CFG=UDEB
++ CFG=UDEB
++ z:/epoc32/tools/make.exe -C 'Z:\sf\app\organizer\searchui\searchapp\plugins\resultviewerplugin\group' -f srchuiresviewpluginicons.mk CFG=UDEB 'EPOCBLD=z:\epoc32\build\organizer\c_87eda37825f2ef06' 'TO_BLDINF=Z:\sf\app\organizer\group' PLATFORM=WINSCW LIB
+z:\epoc32\tools\make.exe[1]: Entering directory `Z:/sf/app/organizer/searchui/searchapp/plugins/resultviewerplugin/group'
+z:\epoc32\tools\make.exe[1]: Leaving directory `Z:/sf/app/organizer/searchui/searchapp/plugins/resultviewerplugin/group'
+]]><time start='1251137383.843750000' elapsed='0.123' />
++ RV=0
++ set +x
+<status exit='ok' attempt='1' />
+</recipe>
+<recipe name='extension_makefile' target='c1a066120fdf384da03453f2e7613ef4_LIB' host='PC213502752220' layer='app' component='organizer' bldinf='Z:/sf/app/organizer/group/bld.inf' mmp='' config='winscw_udeb' platform='WINSCW' phase='ALL' source=''>
+<![CDATA[
++ EPOCROOT=z:
++ PLATFORM=WINSCW
++ TO_ROOT=
++ TO_BLDINF=Z:/sf/app/organizer/group
++ EPOCBLD=z:/epoc32/build/organizer/c_87eda37825f2ef06
++ CFG=udeb
++ RMDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rmdir.exe
++ RM=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
++ ERASE=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
++ MKDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/mkdir.exe
++ CP=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/cp.exe
++ MAKEFILENAME=
++ DIRECTORY=Z:/sf/app/organizer/searchui/searchapp/plugins/indevicesearch/group
++ EXTMAKEFILENAME=indevicesearchicons.mk
++ DEPENDENCIES=
++ TOOL=
++ RVCT22LIB=
++ RVCT22INC=
++ RVCT22BIN=
++ MAKEVAR='"z:/epoc32/tools/make.exe"'
++ EXTMAKEFILETARGET=LIB
++ export 'EPOCROOT=z:\'
++ EPOCROOT='z:\'
++ export CFG=UDEB
++ CFG=UDEB
++ z:/epoc32/tools/make.exe -C 'Z:\sf\app\organizer\searchui\searchapp\plugins\indevicesearch\group' -f indevicesearchicons.mk CFG=UDEB 'EPOCBLD=z:\epoc32\build\organizer\c_87eda37825f2ef06' 'TO_BLDINF=Z:\sf\app\organizer\group' PLATFORM=WINSCW LIB
+z:\epoc32\tools\make.exe[1]: Entering directory `Z:/sf/app/organizer/searchui/searchapp/plugins/indevicesearch/group'
+z:\epoc32\tools\make.exe[1]: Leaving directory `Z:/sf/app/organizer/searchui/searchapp/plugins/indevicesearch/group'
+]]><time start='1251137383.843750000' elapsed='0.156' />
++ RV=0
++ set +x
+<status exit='ok' attempt='1' />
+</recipe>
+<recipe name='extension_makefile' target='299253e6ab3a2b70a0acf7840baa42df_LIB' host='PC213502752220' layer='app' component='organizer' bldinf='Z:/sf/app/organizer/group/bld.inf' mmp='' config='winscw_udeb' platform='WINSCW' phase='ALL' source=''>
+<![CDATA[
++ EPOCROOT=z:
++ PLATFORM=WINSCW
++ TO_ROOT=
++ TO_BLDINF=Z:/sf/app/organizer/group
++ EPOCBLD=z:/epoc32/build/organizer/c_87eda37825f2ef06
++ CFG=udeb
++ RMDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rmdir.exe
++ RM=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
++ ERASE=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
++ MKDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/mkdir.exe
++ CP=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/cp.exe
++ MAKEFILENAME=
++ DIRECTORY=Z:/sf/app/organizer/searchui/searchapp/srchuiapp/group
++ EXTMAKEFILENAME=srchuiappicons.mk
++ DEPENDENCIES=
++ TOOL=
++ RVCT22LIB=
++ RVCT22INC=
++ RVCT22BIN=
++ MAKEVAR='"z:/epoc32/tools/make.exe"'
++ EXTMAKEFILETARGET=LIB
++ export 'EPOCROOT=z:\'
++ EPOCROOT='z:\'
++ export CFG=UDEB
++ CFG=UDEB
++ z:/epoc32/tools/make.exe -C 'Z:\sf\app\organizer\searchui\searchapp\srchuiapp\group' -f srchuiappicons.mk CFG=UDEB 'EPOCBLD=z:\epoc32\build\organizer\c_87eda37825f2ef06' 'TO_BLDINF=Z:\sf\app\organizer\group' PLATFORM=WINSCW LIB
+z:\epoc32\tools\make.exe[1]: Entering directory `Z:/sf/app/organizer/searchui/searchapp/srchuiapp/group'
+z:\epoc32\tools\make.exe[1]: Leaving directory `Z:/sf/app/organizer/searchui/searchapp/srchuiapp/group'
+]]><time start='1251137384.859375000' elapsed='0.096' />
++ RV=0
++ set +x
+<status exit='ok' attempt='1' />
+</recipe>
+<recipe name='extension_makefile' target='01c417b2e14b8cdf8b96c81af187c4f3_BLD' host='PC213502752220' layer='app' component='organizer' bldinf='Z:/sf/app/organizer/group/bld.inf' mmp='' config='winscw_udeb' platform='WINSCW' phase='ALL' source=''>
+<![CDATA[
++ EPOCROOT=z:
++ PLATFORM=WINSCW
++ TO_ROOT=
++ TO_BLDINF=Z:/sf/app/organizer/group
++ EPOCBLD=z:/epoc32/build/organizer/c_87eda37825f2ef06
++ CFG=udeb
++ RMDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rmdir.exe
++ RM=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
++ ERASE=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
++ MKDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/mkdir.exe
++ CP=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/cp.exe
++ MAKEFILENAME=
++ DIRECTORY=Z:/sf/app/organizer/searchui/searchapp/plugins/resultviewerplugin/group
++ EXTMAKEFILENAME=srchuiresviewpluginicons.mk
++ DEPENDENCIES=
++ TOOL=
++ RVCT22LIB=
++ RVCT22INC=
++ RVCT22BIN=
++ MAKEVAR='"z:/epoc32/tools/make.exe"'
++ EXTMAKEFILETARGET=BLD
++ export 'EPOCROOT=z:\'
++ EPOCROOT='z:\'
++ export CFG=UDEB
++ CFG=UDEB
++ z:/epoc32/tools/make.exe -C 'Z:\sf\app\organizer\searchui\searchapp\plugins\resultviewerplugin\group' -f srchuiresviewpluginicons.mk CFG=UDEB 'EPOCBLD=z:\epoc32\build\organizer\c_87eda37825f2ef06' 'TO_BLDINF=Z:\sf\app\organizer\group' PLATFORM=WINSCW BLD
+z:\epoc32\tools\make.exe[1]: Entering directory `Z:/sf/app/organizer/searchui/searchapp/plugins/resultviewerplugin/group'
+z:\epoc32\tools\make.exe[1]: Nothing to be done for `BLD'.
+z:\epoc32\tools\make.exe[1]: Leaving directory `Z:/sf/app/organizer/searchui/searchapp/plugins/resultviewerplugin/group'
+]]><time start='1251137385.984375000' elapsed='0.235' />
++ RV=0
++ set +x
+<status exit='ok' attempt='1' />
+</recipe>
+<recipe name='extension_makefile' target='a7e278cc5a59319fa865c836a9737763_BLD' host='PC213502752220' layer='app' component='organizer' bldinf='Z:/sf/app/organizer/group/bld.inf' mmp='' config='winscw_udeb' platform='WINSCW' phase='ALL' source=''>
+<![CDATA[
++ EPOCROOT=z:
++ PLATFORM=WINSCW
++ TO_ROOT=
++ TO_BLDINF=Z:/sf/app/organizer/group
++ EPOCBLD=z:/epoc32/build/organizer/c_87eda37825f2ef06
++ CFG=udeb
++ RMDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rmdir.exe
++ RM=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
++ ERASE=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
++ MKDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/mkdir.exe
++ CP=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/cp.exe
++ MAKEFILENAME=
++ DIRECTORY=Z:/sf/app/organizer/searchui/searchapp/srchuigenui/group
++ EXTMAKEFILENAME=GnrlSearchUIIcons.mk
++ DEPENDENCIES=
++ TOOL=
++ RVCT22LIB=
++ RVCT22INC=
++ RVCT22BIN=
++ MAKEVAR='"z:/epoc32/tools/make.exe"'
++ EXTMAKEFILETARGET=BLD
++ export 'EPOCROOT=z:\'
++ EPOCROOT='z:\'
++ export CFG=UDEB
++ CFG=UDEB
++ z:/epoc32/tools/make.exe -C 'Z:\sf\app\organizer\searchui\searchapp\srchuigenui\group' -f GnrlSearchUIIcons.mk CFG=UDEB 'EPOCBLD=z:\epoc32\build\organizer\c_87eda37825f2ef06' 'TO_BLDINF=Z:\sf\app\organizer\group' PLATFORM=WINSCW BLD
+z:\epoc32\tools\make.exe[1]: Entering directory `Z:/sf/app/organizer/searchui/searchapp/srchuigenui/group'
+z:\epoc32\tools\make.exe[1]: Nothing to be done for `BLD'.
+z:\epoc32\tools\make.exe[1]: Leaving directory `Z:/sf/app/organizer/searchui/searchapp/srchuigenui/group'
+]]><time start='1251137386.046875000' elapsed='0.204' />
++ RV=0
++ set +x
+<status exit='ok' attempt='1' />
+</recipe>
+<recipe name='extension_makefile' target='c1a066120fdf384da03453f2e7613ef4_BLD' host='PC213502752220' layer='app' component='organizer' bldinf='Z:/sf/app/organizer/group/bld.inf' mmp='' config='winscw_udeb' platform='WINSCW' phase='ALL' source=''>
+<![CDATA[
++ EPOCROOT=z:
++ PLATFORM=WINSCW
++ TO_ROOT=
++ TO_BLDINF=Z:/sf/app/organizer/group
++ EPOCBLD=z:/epoc32/build/organizer/c_87eda37825f2ef06
++ CFG=udeb
++ RMDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rmdir.exe
++ RM=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
++ ERASE=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
++ MKDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/mkdir.exe
++ CP=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/cp.exe
++ MAKEFILENAME=
++ DIRECTORY=Z:/sf/app/organizer/searchui/searchapp/plugins/indevicesearch/group
++ EXTMAKEFILENAME=indevicesearchicons.mk
++ DEPENDENCIES=
++ TOOL=
++ RVCT22LIB=
++ RVCT22INC=
++ RVCT22BIN=
++ MAKEVAR='"z:/epoc32/tools/make.exe"'
++ EXTMAKEFILETARGET=BLD
++ export 'EPOCROOT=z:\'
++ EPOCROOT='z:\'
++ export CFG=UDEB
++ CFG=UDEB
++ z:/epoc32/tools/make.exe -C 'Z:\sf\app\organizer\searchui\searchapp\plugins\indevicesearch\group' -f indevicesearchicons.mk CFG=UDEB 'EPOCBLD=z:\epoc32\build\organizer\c_87eda37825f2ef06' 'TO_BLDINF=Z:\sf\app\organizer\group' PLATFORM=WINSCW BLD
+z:\epoc32\tools\make.exe[1]: Entering directory `Z:/sf/app/organizer/searchui/searchapp/plugins/indevicesearch/group'
+z:\epoc32\tools\make.exe[1]: Nothing to be done for `BLD'.
+z:\epoc32\tools\make.exe[1]: Leaving directory `Z:/sf/app/organizer/searchui/searchapp/plugins/indevicesearch/group'
+]]><time start='1251137386.218750000' elapsed='0.076' />
++ RV=0
++ set +x
+<status exit='ok' attempt='1' />
+</recipe>
+<recipe name='extension_makefile' target='299253e6ab3a2b70a0acf7840baa42df_BLD' host='PC213502752220' layer='app' component='organizer' bldinf='Z:/sf/app/organizer/group/bld.inf' mmp='' config='winscw_udeb' platform='WINSCW' phase='ALL' source=''>
+<![CDATA[
++ EPOCROOT=z:
++ PLATFORM=WINSCW
++ TO_ROOT=
++ TO_BLDINF=Z:/sf/app/organizer/group
++ EPOCBLD=z:/epoc32/build/organizer/c_87eda37825f2ef06
++ CFG=udeb
++ RMDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rmdir.exe
++ RM=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
++ ERASE=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
++ MKDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/mkdir.exe
++ CP=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/cp.exe
++ MAKEFILENAME=
++ DIRECTORY=Z:/sf/app/organizer/searchui/searchapp/srchuiapp/group
++ EXTMAKEFILENAME=srchuiappicons.mk
++ DEPENDENCIES=
++ TOOL=
++ RVCT22LIB=
++ RVCT22INC=
++ RVCT22BIN=
++ MAKEVAR='"z:/epoc32/tools/make.exe"'
++ EXTMAKEFILETARGET=BLD
++ export 'EPOCROOT=z:\'
++ EPOCROOT='z:\'
++ export CFG=UDEB
++ CFG=UDEB
++ z:/epoc32/tools/make.exe -C 'Z:\sf\app\organizer\searchui\searchapp\srchuiapp\group' -f srchuiappicons.mk CFG=UDEB 'EPOCBLD=z:\epoc32\build\organizer\c_87eda37825f2ef06' 'TO_BLDINF=Z:\sf\app\organizer\group' PLATFORM=WINSCW BLD
+z:\epoc32\tools\make.exe[1]: Entering directory `Z:/sf/app/organizer/searchui/searchapp/srchuiapp/group'
+z:\epoc32\tools\make.exe[1]: Nothing to be done for `BLD'.
+z:\epoc32\tools\make.exe[1]: Leaving directory `Z:/sf/app/organizer/searchui/searchapp/srchuiapp/group'
+]]><time start='1251137386.671875000' elapsed='0.046' />
++ RV=0
++ set +x
+<status exit='ok' attempt='1' />
+</recipe>
+<recipe name='win32compile2object' target='z:/epoc32/build/organizer/c_87eda37825f2ef06/!caldavserver_exe/winscw/udeb/caldavengine.o' host='PC213502752220' layer='app' component='organizer' bldinf='Z:/sf/app/organizer/group/bld.inf' mmp='Z:/sf/app/organizer/calendarengines/caldav/group/CalDavServer.mmp' config='winscw_udeb' platform='winscw' phase='ALL' source='Z:/sf/app/organizer/calendarengines/caldav/src/caldavengine.cpp'>
+<![CDATA[
++ mwccsym2.exe -c -align 4 -warnings on -w nohidevirtual,nounusedexpr -msgstyle gcc -enum int -str pool -exc ms -trigraphs on -cwd source -g -O0 -inline off -runtime staticmulti -wchar_t off -nostdinc -gccdepends -MD -d __SYMBIAN32__ -d __CW32__ -d __WINS__ -d __WINSCW__ -d __SUPPORT_CPP_EXCEPTIONS__ -d _UNICODE -d _DEBUG -d __EXE__ -i- -i Z:/sf/app/organizer/calendarengines/caldav/inc -i z:/epoc32/include -i z:/Epoc32/include -i z:/Epoc32/include/app -i z:/Epoc32/include/mw -i z:/Epoc32/include/platform -i z:/Epoc32/include/platform/mw -i z:/Epoc32/include/platform/app -include bldvariant.hrh -o 'z:/epoc32/build/organizer/c_87eda37825f2ef06/!caldavserver_exe/winscw/udeb/caldavengine.o' Z:/sf/app/organizer/calendarengines/caldav/src/caldavengine.cpp
+sf\app\organizer\calendarengines\caldav\src\caldavengine.cpp:839: warning: variable / argument 'aUrl' is not used in function
+sf\app\organizer\calendarengines\caldav\src\caldavengine.cpp:839: warning: variable / argument 'aEtag' is not used in function
++ C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/sed.exe 's#\\\(.\)#/\1#g;s#/ #\\ #g;s#\([A-Za-z]:\)\\#\1/#g;1,1s#.*: .* \(.\)\?$#    z:/epoc32/build/organizer/c_87eda37825f2ef06/!caldavserver_exe/winscw/udeb/caldavengine.o: Z:/sf/app/organizer/calendarengines/caldav/src/caldavengine.cpp \1#' 'z:/epoc32/build/organizer/c_87eda37825f2ef06/!caldavserver_exe/winscw/udeb/caldavengine.dep'
+]]><time start='1251137384.875000000' elapsed='2.040' />
++ RV=0
++ set +x
+<status exit='ok' attempt='1' />
+</recipe>
+<recipe name='win32simplelink' target='z:/epoc32/release/winscw/udeb/!CalDavServer.exe' host='PC213502752220' layer='app' component='organizer' bldinf='Z:/sf/app/organizer/group/bld.inf' mmp='Z:/sf/app/organizer/calendarengines/caldav/group/CalDavServer.mmp' config='winscw_udeb' platform='winscw' phase='ALL' source=''>
+<![CDATA[
++ MWSym2LibraryFiles='msl_all_static_mse_symbian_d.lib;gdi32.lib;user32.lib;kernel32.lib'
++ mwldsym2.exe -msgstyle gcc -stdlib -subsystem windows -g -heapreserve=4096 -heapcommit=20 -m '?_E32Bootstrap@@YGXXZ' z:/epoc32/release/winscw/udeb/eexe.lib z:/epoc32/release/winscw/udeb/euser.lib z:/epoc32/release/winscw/udeb/apparc.lib z:/epoc32/release/winscw/udeb/cone.lib z:/epoc32/release/winscw/udeb/eikcore.lib z:/epoc32/release/winscw/udeb/avkon.lib z:/epoc32/release/winscw/udeb/commonengine.lib z:/epoc32/release/winscw/udeb/efsrv.lib z:/epoc32/release/winscw/udeb/estor.lib z:/epoc32/release/winscw/udeb/eikcoctl.lib z:/epoc32/release/winscw/udeb/eikdlg.lib z:/epoc32/release/winscw/udeb/eikctl.lib z:/epoc32/release/winscw/udeb/bafl.lib z:/epoc32/release/winscw/udeb/fbscli.lib z:/epoc32/release/winscw/udeb/aknnotify.lib z:/epoc32/release/winscw/udeb/aknicon.lib z:/epoc32/release/winscw/udeb/etext.lib z:/epoc32/release/winscw/udeb/gdi.lib z:/epoc32/release/winscw/udeb/egul.lib z:/epoc32/release/winscw/udeb/insock.lib z:/epoc32/release/winscw/udeb/ecom.lib z:/epoc32/release/winscw/udeb/InetProtUtil.lib z:/epoc32/release/winscw/udeb/http.lib z:/epoc32/release/winscw/udeb/esock.lib z:/epoc32/release/winscw/udeb/xmlengineDOM.lib z:/epoc32/release/winscw/udeb/calinterimapi.lib z:/epoc32/release/winscw/udeb/calenimp.lib z:/epoc32/release/winscw/udeb/CalenInterimUtils2.lib z:/epoc32/release/winscw/udeb/commdb.lib z:/epoc32/release/winscw/udeb/flogger.lib -o 'z:/epoc32/release/winscw/udeb/!CalDavServer.exe' -noimplib -l 'z:/epoc32/build/organizer/c_87eda37825f2ef06/!caldavserver_exe/winscw/udeb' -search CalDavServer.o caldavutils.o httpclient.o CalDavServerSession.o caldavengine.o caldavenginemgr.o '!CalDavServer_UID_.o'
+mwldsym2.exe: warning: Multiply defined symbol: ___get_MSL_init_count in
+mwldsym2.exe: warning: files uc_cwhelp.obj (eexe.lib), startup.win32.c.obj (msl_all_static_mse_symbian_d.lib),
+mwldsym2.exe: warning: keeping definition in startup.win32.c.obj
+mwldsym2.exe: warning: Multiply defined symbol: __CleanUpMSL in
+mwldsym2.exe: warning: files uc_cwhelp.obj (eexe.lib), startup.win32.c.obj (msl_all_static_mse_symbian_d.lib),
+mwldsym2.exe: warning: keeping definition in startup.win32.c.obj
+]]><time start='1251137387.281250000' elapsed='0.298' />
++ RV=0
++ set +x
+<status exit='ok' attempt='1' />
+</recipe>
+<recipe name='extension_makefile' target='01c417b2e14b8cdf8b96c81af187c4f3_FINAL' host='PC213502752220' layer='app' component='organizer' bldinf='Z:/sf/app/organizer/group/bld.inf' mmp='' config='winscw_udeb' platform='WINSCW' phase='ALL' source=''>
+<![CDATA[
++ EPOCROOT=z:
++ PLATFORM=WINSCW
++ TO_ROOT=
++ TO_BLDINF=Z:/sf/app/organizer/group
++ EPOCBLD=z:/epoc32/build/organizer/c_87eda37825f2ef06
++ CFG=udeb
++ RMDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rmdir.exe
++ RM=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
++ ERASE=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
++ MKDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/mkdir.exe
++ CP=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/cp.exe
++ MAKEFILENAME=
++ DIRECTORY=Z:/sf/app/organizer/searchui/searchapp/plugins/resultviewerplugin/group
++ EXTMAKEFILENAME=srchuiresviewpluginicons.mk
++ DEPENDENCIES=
++ TOOL=
++ RVCT22LIB=
++ RVCT22INC=
++ RVCT22BIN=
++ MAKEVAR='"z:/epoc32/tools/make.exe"'
++ EXTMAKEFILETARGET=FINAL
++ export 'EPOCROOT=z:\'
++ EPOCROOT='z:\'
++ export CFG=UDEB
++ CFG=UDEB
++ z:/epoc32/tools/make.exe -C 'Z:\sf\app\organizer\searchui\searchapp\plugins\resultviewerplugin\group' -f srchuiresviewpluginicons.mk CFG=UDEB 'EPOCBLD=z:\epoc32\build\organizer\c_87eda37825f2ef06' 'TO_BLDINF=Z:\sf\app\organizer\group' PLATFORM=WINSCW FINAL
+z:\epoc32\tools\make.exe[1]: Entering directory `Z:/sf/app/organizer/searchui/searchapp/plugins/resultviewerplugin/group'
+z:\epoc32\tools\make.exe[1]: Leaving directory `Z:/sf/app/organizer/searchui/searchapp/plugins/resultviewerplugin/group'
+]]><time start='1251137390.734375000' elapsed='0.181' />
++ RV=0
++ set +x
+<status exit='ok' attempt='1' />
+</recipe>
+<recipe name='extension_makefile' target='c1a066120fdf384da03453f2e7613ef4_FINAL' host='PC213502752220' layer='app' component='organizer' bldinf='Z:/sf/app/organizer/group/bld.inf' mmp='' config='winscw_udeb' platform='WINSCW' phase='ALL' source=''>
+<![CDATA[
++ EPOCROOT=z:
++ PLATFORM=WINSCW
++ TO_ROOT=
++ TO_BLDINF=Z:/sf/app/organizer/group
++ EPOCBLD=z:/epoc32/build/organizer/c_87eda37825f2ef06
++ CFG=udeb
++ RMDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rmdir.exe
++ RM=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
++ ERASE=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
++ MKDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/mkdir.exe
++ CP=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/cp.exe
++ MAKEFILENAME=
++ DIRECTORY=Z:/sf/app/organizer/searchui/searchapp/plugins/indevicesearch/group
++ EXTMAKEFILENAME=indevicesearchicons.mk
++ DEPENDENCIES=
++ TOOL=
++ RVCT22LIB=
++ RVCT22INC=
++ RVCT22BIN=
++ MAKEVAR='"z:/epoc32/tools/make.exe"'
++ EXTMAKEFILETARGET=FINAL
++ export 'EPOCROOT=z:\'
++ EPOCROOT='z:\'
++ export CFG=UDEB
++ CFG=UDEB
++ z:/epoc32/tools/make.exe -C 'Z:\sf\app\organizer\searchui\searchapp\plugins\indevicesearch\group' -f indevicesearchicons.mk CFG=UDEB 'EPOCBLD=z:\epoc32\build\organizer\c_87eda37825f2ef06' 'TO_BLDINF=Z:\sf\app\organizer\group' PLATFORM=WINSCW FINAL
+z:\epoc32\tools\make.exe[1]: Entering directory `Z:/sf/app/organizer/searchui/searchapp/plugins/indevicesearch/group'
+z:\epoc32\tools\make.exe[1]: Leaving directory `Z:/sf/app/organizer/searchui/searchapp/plugins/indevicesearch/group'
+]]><time start='1251137390.797875000' elapsed='0.127' />
++ RV=0
++ set +x
+<status exit='ok' attempt='1' />
+</recipe>
+<recipe name='extension_makefile' target='299253e6ab3a2b70a0acf7840baa42df_FINAL' host='PC213502752220' layer='app' component='organizer' bldinf='Z:/sf/app/organizer/group/bld.inf' mmp='' config='winscw_udeb' platform='WINSCW' phase='ALL' source=''>
+<![CDATA[
++ EPOCROOT=z:
++ PLATFORM=WINSCW
++ TO_ROOT=
++ TO_BLDINF=Z:/sf/app/organizer/group
++ EPOCBLD=z:/epoc32/build/organizer/c_87eda37825f2ef06
++ CFG=udeb
++ RMDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rmdir.exe
++ RM=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
++ ERASE=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
++ MKDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/mkdir.exe
++ CP=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/cp.exe
++ MAKEFILENAME=
++ DIRECTORY=Z:/sf/app/organizer/searchui/searchapp/srchuiapp/group
++ EXTMAKEFILENAME=srchuiappicons.mk
++ DEPENDENCIES=
++ TOOL=
++ RVCT22LIB=
++ RVCT22INC=
++ RVCT22BIN=
++ MAKEVAR='"z:/epoc32/tools/make.exe"'
++ EXTMAKEFILETARGET=FINAL
++ export 'EPOCROOT=z:\'
++ EPOCROOT='z:\'
++ export CFG=UDEB
++ CFG=UDEB
++ z:/epoc32/tools/make.exe -C 'Z:\sf\app\organizer\searchui\searchapp\srchuiapp\group' -f srchuiappicons.mk CFG=UDEB 'EPOCBLD=z:\epoc32\build\organizer\c_87eda37825f2ef06' 'TO_BLDINF=Z:\sf\app\organizer\group' PLATFORM=WINSCW FINAL
+z:\epoc32\tools\make.exe[1]: Entering directory `Z:/sf/app/organizer/searchui/searchapp/srchuiapp/group'
+z:\epoc32\tools\make.exe[1]: Leaving directory `Z:/sf/app/organizer/searchui/searchapp/srchuiapp/group'
+]]><time start='1251137390.781250000' elapsed='0.199' />
++ RV=0
++ set +x
+<status exit='ok' attempt='1' />
+</recipe>
+<recipe name='extension_makefile' target='a7e278cc5a59319fa865c836a9737763_FINAL' host='PC213502752220' layer='app' component='organizer' bldinf='Z:/sf/app/organizer/group/bld.inf' mmp='' config='winscw_udeb' platform='WINSCW' phase='ALL' source=''>
+<![CDATA[
++ EPOCROOT=z:
++ PLATFORM=WINSCW
++ TO_ROOT=
++ TO_BLDINF=Z:/sf/app/organizer/group
++ EPOCBLD=z:/epoc32/build/organizer/c_87eda37825f2ef06
++ CFG=udeb
++ RMDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rmdir.exe
++ RM=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
++ ERASE=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
++ MKDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/mkdir.exe
++ CP=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/cp.exe
++ MAKEFILENAME=
++ DIRECTORY=Z:/sf/app/organizer/searchui/searchapp/srchuigenui/group
++ EXTMAKEFILENAME=GnrlSearchUIIcons.mk
++ DEPENDENCIES=
++ TOOL=
++ RVCT22LIB=
++ RVCT22INC=
++ RVCT22BIN=
++ MAKEVAR='"z:/epoc32/tools/make.exe"'
++ EXTMAKEFILETARGET=FINAL
++ export 'EPOCROOT=z:\'
++ EPOCROOT='z:\'
++ export CFG=UDEB
++ CFG=UDEB
++ z:/epoc32/tools/make.exe -C 'Z:\sf\app\organizer\searchui\searchapp\srchuigenui\group' -f GnrlSearchUIIcons.mk CFG=UDEB 'EPOCBLD=z:\epoc32\build\organizer\c_87eda37825f2ef06' 'TO_BLDINF=Z:\sf\app\organizer\group' PLATFORM=WINSCW FINAL
+z:\epoc32\tools\make.exe[1]: Entering directory `Z:/sf/app/organizer/searchui/searchapp/srchuigenui/group'
+z:\epoc32\tools\make.exe[1]: Leaving directory `Z:/sf/app/organizer/searchui/searchapp/srchuigenui/group'
+]]><time start='1251137390.875000000' elapsed='0.136' />
++ RV=0
++ set +x
+<status exit='ok' attempt='1' />
+</recipe>
+<info>Running C:/Symbian/Tools/PDT_1.0/raptor/bin/sbs_descramble.exe sbs3882447167 stop</info>
+<info>The make-engine exited successfully.</info>
+<info>Run time 134 seconds</info>
+</buildlog>
