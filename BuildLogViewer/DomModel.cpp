@@ -45,15 +45,16 @@
  #include "domitem.h"
  #include "dommodel.h"
 
- DomModel::DomModel(QDomDocument document, QObject *parent)
+ DomModel::DomModel(QDomDocument *document, QObject *parent)
      : QAbstractItemModel(parent), domDocument(document)
  {
-     rootItem = new DomItem(domDocument, 0);
+     rootItem = new DomItem(*domDocument, 0);
  }
 
  DomModel::~DomModel()
  {
      delete rootItem;
+     delete this->domDocument;
  }
 
  int DomModel::columnCount(const QModelIndex &/*parent*/) const

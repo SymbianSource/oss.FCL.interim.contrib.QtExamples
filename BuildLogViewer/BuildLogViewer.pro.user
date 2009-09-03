@@ -46,7 +46,7 @@
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString" >Debug</value>
    <value key="QtVersionId" type="int" >0</value>
    <value key="addQDumper" type="" ></value>
-   <value key="buildDirectory" type="QString" >C:\workspace\tinker\BuildLogViewer</value>
+   <value key="buildDirectory" type="QString" >C:\workspace\QtExamples\BuildLogViewer</value>
   </valuemap>
  </data>
  <data>
@@ -101,14 +101,14 @@
     <value type="QString" >WINDIR=C:\WINDOWS</value>
    </valuelist>
    <valuelist key="abstractProcess.arguments" type="QVariantList" >
-    <value type="QString" >C:/workspace/tinker/BuildLogViewer/BuildLogViewer.pro</value>
+    <value type="QString" >C:/workspace/QtExamples/BuildLogViewer/BuildLogViewer.pro</value>
     <value type="QString" >-spec</value>
     <value type="QString" >win32-g++</value>
     <value type="QString" >-r</value>
    </valuelist>
    <value key="abstractProcess.command" type="QString" >C:/Qt/2009.03/qt/bin/qmake.exe</value>
    <value key="abstractProcess.enabled" type="bool" >false</value>
-   <value key="abstractProcess.workingDirectory" type="QString" >C:/workspace/tinker/BuildLogViewer</value>
+   <value key="abstractProcess.workingDirectory" type="QString" >C:/workspace/QtExamples/BuildLogViewer</value>
    <value key="buildConfiguration" type="int" >2</value>
   </valuemap>
  </data>
@@ -160,7 +160,7 @@
    </valuelist>
    <value key="abstractProcess.command" type="QString" >C:/Qt/2009.03/mingw/bin/mingw32-make.exe</value>
    <value key="abstractProcess.enabled" type="bool" >true</value>
-   <value key="abstractProcess.workingDirectory" type="QString" >C:/workspace/tinker/BuildLogViewer</value>
+   <value key="abstractProcess.workingDirectory" type="QString" >C:/workspace/QtExamples/BuildLogViewer</value>
   </valuemap>
  </data>
  <data>

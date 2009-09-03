@@ -24,6 +24,7 @@ public:
 public slots:
     void notYetImplemented();
     void openLog();
+    void showStatus();
     void enableActions();
     void closeEvent(QCloseEvent *event);
 

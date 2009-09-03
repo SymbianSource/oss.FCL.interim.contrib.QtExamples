@@ -1,6 +1,7 @@
 #include <QFileDialog>
 #include <QMessageBox>
 
+#include "AtAGlance.h"
 #include "Document.h"
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
@@ -43,11 +44,25 @@ void MainWindow::notYetImplemented()
     doc->show();
  }
 
+ void MainWindow::showStatus()
+ {
+    QString filename = QFileDialog::getOpenFileName(
+        this, tr("Open Log"), QDir::currentPath(),
+        tr("Build log *.xml;;All files (*.*)"));
+    AtAGlance *aag = new AtAGlance(filename, this);
+    workspace->addWindow(aag);
+    aag->traveAndPopulate();
+    aag->decideOnLayout();
+    aag->show();
+ }
+
  void MainWindow::createActions()
  {
     // file menu - mark as NYI
+    //connect(ui->actionOpen, SIGNAL(triggered()),
+    //      this, SLOT(openLog()));
     connect(ui->actionOpen, SIGNAL(triggered()),
-            this, SLOT(openLog()));
+            this, SLOT(showStatus()));
     connect(ui->actionClose, SIGNAL(triggered()),
             workspace, SLOT(closeActiveWindow()));
 

@@ -8,9 +8,13 @@ SOURCES += main.cpp \
     mainwindow.cpp \
     Document.cpp \
     DomModel.cpp \
-    DomItem.cpp
+    DomItem.cpp \
+    AtAGlance.cpp \
+    BuildStatus.cpp
 HEADERS += mainwindow.h \
     Document.h \
     DomItem.h \
-    DomModel.h
+    DomModel.h \
+    AtAGlance.h \
+    BuildStatus.h
 FORMS += mainwindow.ui

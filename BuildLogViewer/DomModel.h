@@ -47,6 +47,11 @@
  #include <QModelIndex>
  #include <QVariant>
 
+/*
+  * This class encapsulates the DOM tree for the build output log and provides
+  * an interface to the classes which presents it to the user.
+  */
+
  class DomItem;
 
  class DomModel : public QAbstractItemModel
@@ -54,7 +59,7 @@
      Q_OBJECT
 
  public:
-     DomModel(QDomDocument document, QObject *parent = 0);
+     DomModel(QDomDocument *document, QObject *parent = 0);
      ~DomModel();
 
      QVariant data(const QModelIndex &index, int role) const;
@@ -68,7 +73,7 @@
      int columnCount(const QModelIndex &parent = QModelIndex()) const;
 
  private:
-     QDomDocument domDocument;
+     QDomDocument *domDocument;
      DomItem *rootItem;
  };
 

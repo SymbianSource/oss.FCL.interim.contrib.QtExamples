@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <buildlog sbs_version="2.5.2 [2009-03-06 release]" xmlns="http://symbian.com/xml/build/log" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://symbian.com/xml/build/log http://symbian.com/xml/build/log/1_0.xsd">
+<info>System Definition file sf/app/organizer/package_definition.xml</info>
 <info>sbs: version 2.5.2 [2009-03-06 release]
 </info>
 <info>SBS_HOME C:/Symbian/Tools/PDT_1.0/raptor</info>
@@ -51,7 +52,6 @@
 <info>updating configuration make with variant last</info>
 <info>Buildable configuration 'winscw_udeb'</info>
 <info>Buildable configuration 'winscw_urel'</info>
-<info>System Definition file sf/app/organizer/package_definition.xml</info>
 <info>Found 6 bld.inf references in sf/app/organizer/package_definition.xml within 1 layers:</info>
 <info>	app</info>
 <info>Found 6 bld.inf references in layer "app"</info>

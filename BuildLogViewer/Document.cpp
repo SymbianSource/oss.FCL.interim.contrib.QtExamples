@@ -24,6 +24,6 @@ Document::Document(QWidget *parent, QString filename) : QTreeView (parent)
         return ;
     }
     file.close();
-    model = new DomModel(*log, this);
+    model = new DomModel(log, this);
     this->setModel(model);
 }
