@@ -1,6 +1,41 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <buildlog sbs_version="2.5.2 [2009-03-06 release]" xmlns="http://symbian.com/xml/build/log" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://symbian.com/xml/build/log http://symbian.com/xml/build/log/1_0.xsd">
-<info>System Definition file sf/app/organizer/package_definition.xml</info>
+<status exit='failed' attempt='1' />
+<recipe name='extension_makefile' target='c1a066120fdf384da03453f2e7613ef4_MAKMAKE' host='PC213502752220' layer='app' component='organizer' bldinf='Z:/sf/app/organizer/group/bld.inf' mmp='' config='winscw_udeb' platform='WINSCW' phase='ALL' source=''>
+<![CDATA[
++ EPOCROOT=z:
++ PLATFORM=WINSCW
++ TO_ROOT=
++ TO_BLDINF=Z:/sf/app/organizer/group
++ EPOCBLD=z:/epoc32/build/organizer/c_87eda37825f2ef06
++ CFG=udeb
++ RMDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rmdir.exe
++ RM=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
++ ERASE=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
++ MKDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/mkdir.exe
++ CP=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/cp.exe
++ MAKEFILENAME=
++ DIRECTORY=Z:/sf/app/organizer/searchui/searchapp/plugins/indevicesearch/group
++ EXTMAKEFILENAME=indevicesearchicons.mk
++ DEPENDENCIES=
++ TOOL=
++ RVCT22LIB=
++ RVCT22INC=
++ RVCT22BIN=
++ MAKEVAR='"z:/epoc32/tools/make.exe"'
++ EXTMAKEFILETARGET=MAKMAKE
++ export 'EPOCROOT=z:\'
++ EPOCROOT='z:\'
++ export CFG=UDEB
++ CFG=UDEB
++ z:/epoc32/tools/make.exe -C 'Z:\sf\app\organizer\searchui\searchapp\plugins\indevicesearch\group' -f indevicesearchicons.mk CFG=UDEB 'EPOCBLD=z:\epoc32\build\organizer\c_87eda37825f2ef06' 'TO_BLDINF=Z:\sf\app\organizer\group' PLATFORM=WINSCW MAKMAKE
+z:\epoc32\tools\make.exe[1]: Entering directory `Z:/sf/app/organizer/searchui/searchapp/plugins/indevicesearch/group'
+z:\epoc32\tools\make.exe[1]: Leaving directory `Z:/sf/app/organizer/searchui/searchapp/plugins/indevicesearch/group'
+]]><time start='1250789969.765625000' elapsed='0.166' />
++ RV=0
++ set +x
+<status exit='failed' attempt='1' />
+</recipe>
 <info>sbs: version 2.5.2 [2009-03-06 release]
 </info>
 <info>SBS_HOME C:/Symbian/Tools/PDT_1.0/raptor</info>
@@ -52,6 +87,7 @@
 <info>updating configuration make with variant last</info>
 <info>Buildable configuration 'winscw_udeb'</info>
 <info>Buildable configuration 'winscw_urel'</info>
+<info>System Definition file sf/app/organizer/package_definition.xml</info>
 <info>Found 6 bld.inf references in sf/app/organizer/package_definition.xml within 1 layers:</info>
 <info>	app</info>
 <info>Found 6 bld.inf references in layer "app"</info>
@@ -622,41 +658,6 @@ true
 <info>NOT generating CLEAN targets as no CLEAN target was requested </info>
 <info>NOT generating WHAT targets as WHAT target not requested </info>
 <warning project='Z:/sf/app/organizer/calendarengines/caldav/group/CalDavClient.mmp' component='Z:/sf/app/organizer/group/bld.inf'>Unfrozen Exports in build for winscw/udeb</warning> 
-<recipe name='extension_makefile' target='c1a066120fdf384da03453f2e7613ef4_MAKMAKE' host='PC213502752220' layer='app' component='organizer' bldinf='Z:/sf/app/organizer/group/bld.inf' mmp='' config='winscw_udeb' platform='WINSCW' phase='ALL' source=''>
-<![CDATA[
-+ EPOCROOT=z:
-+ PLATFORM=WINSCW
-+ TO_ROOT=
-+ TO_BLDINF=Z:/sf/app/organizer/group
-+ EPOCBLD=z:/epoc32/build/organizer/c_87eda37825f2ef06
-+ CFG=udeb
-+ RMDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rmdir.exe
-+ RM=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
-+ ERASE=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/rm.exe
-+ MKDIR=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/mkdir.exe
-+ CP=C:/Symbian/Tools/PDT_1.0/raptor/win32/cygwin/bin/cp.exe
-+ MAKEFILENAME=
-+ DIRECTORY=Z:/sf/app/organizer/searchui/searchapp/plugins/indevicesearch/group
-+ EXTMAKEFILENAME=indevicesearchicons.mk
-+ DEPENDENCIES=
-+ TOOL=
-+ RVCT22LIB=
-+ RVCT22INC=
-+ RVCT22BIN=
-+ MAKEVAR='"z:/epoc32/tools/make.exe"'
-+ EXTMAKEFILETARGET=MAKMAKE
-+ export 'EPOCROOT=z:\'
-+ EPOCROOT='z:\'
-+ export CFG=UDEB
-+ CFG=UDEB
-+ z:/epoc32/tools/make.exe -C 'Z:\sf\app\organizer\searchui\searchapp\plugins\indevicesearch\group' -f indevicesearchicons.mk CFG=UDEB 'EPOCBLD=z:\epoc32\build\organizer\c_87eda37825f2ef06' 'TO_BLDINF=Z:\sf\app\organizer\group' PLATFORM=WINSCW MAKMAKE
-z:\epoc32\tools\make.exe[1]: Entering directory `Z:/sf/app/organizer/searchui/searchapp/plugins/indevicesearch/group'
-z:\epoc32\tools\make.exe[1]: Leaving directory `Z:/sf/app/organizer/searchui/searchapp/plugins/indevicesearch/group'
-]]><time start='1250789969.765625000' elapsed='0.166' />
-+ RV=0
-+ set +x
-<status exit='ok' attempt='1' />
-</recipe>
 <recipe name='extension_makefile' target='01c417b2e14b8cdf8b96c81af187c4f3_MAKMAKE' host='PC213502752220' layer='app' component='organizer' bldinf='Z:/sf/app/organizer/group/bld.inf' mmp='' config='winscw_udeb' platform='WINSCW' phase='ALL' source=''>
 <![CDATA[
 + EPOCROOT=z:

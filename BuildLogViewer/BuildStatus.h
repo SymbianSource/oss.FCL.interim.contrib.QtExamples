@@ -10,15 +10,15 @@ public:
     BuildStatus(QObject *parent = 0);
 
     void setName(QString n);
-    QString name();
+    const QString *name();
 
     void setTime(QDateTime w);
-    QString Time();
+    QString time();
 
-    void setStatus (bool n ) { m_status = n ; } ;
+    void setStatus (bool n );
+    const QString *status();
 
-
-
+private:
     // What was the name of the package?
     QString *m_packageName;
     // At this time, the symbain build log doesn't have a timestamp in it.
@@ -26,6 +26,7 @@ public:
     QDateTime m_when;
     // Did the build succeed?
     bool m_status;
+    QString *m_PresentStatus;
 };
 
 #endif // BUILDSTATUS_H

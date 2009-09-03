@@ -3,15 +3,17 @@
 BuildStatus::BuildStatus(QObject *parent)
 {
     setParent(parent);
+    this->m_packageName = new QString("<unknown>");
+    this->m_PresentStatus = new QString("Pass");
+    this->m_status = true;
 }
 
 void BuildStatus::setTime(QDateTime w)
 {
     this->m_when = w;
-    this->m_status = true;
 }
 
-QString BuildStatus::Time()
+QString BuildStatus::time()
 {
     return this->m_when.toString();
 }
@@ -26,7 +28,22 @@ void BuildStatus::setName(QString n)
     m_packageName = new QString(n);
 }
 
-QString BuildStatus::name()
+const QString *BuildStatus::name()
 {
-    return *m_packageName;
+    return m_packageName;
+}
+
+void BuildStatus::setStatus (bool n )
+{
+    m_status = n ;
+    if (!m_status)
+    {
+        this->m_PresentStatus = new QString("Failed");
+    }
+}
+
+
+const QString  *BuildStatus::status()
+{
+    return this->m_PresentStatus;
 }
