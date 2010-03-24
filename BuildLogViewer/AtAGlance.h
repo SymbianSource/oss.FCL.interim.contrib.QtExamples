@@ -5,6 +5,7 @@
 #include <QWidget>
 
 #include "BuildStatus.h"
+#include "ui_BuildResults.h"
 
 /*
   * This class presents the status for a given build.  It gets the
@@ -25,6 +26,7 @@ private:
     void traveAndPopulate(QDomElement e);
 
 private:
+    Ui::BuildResultsForm *ui;
     QDomDocument *m_log;
     BuildStatus *m_buildStatus;
 };

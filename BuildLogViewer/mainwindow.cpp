@@ -52,7 +52,8 @@ void MainWindow::notYetImplemented()
     AtAGlance *aag = new AtAGlance(filename, this);
     workspace->addWindow(aag);
     aag->traveAndPopulate();
-    aag->decideOnLayout();
+    // obsolete using BuildResults.ui now.
+    // aag->decideOnLayout();
     aag->show();
  }
 

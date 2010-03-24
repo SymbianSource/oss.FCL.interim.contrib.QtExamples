@@ -6,17 +6,23 @@
 
 class BuildStatus : public QObject
 {
+    Q_OBJECT
+
 public:
     BuildStatus(QObject *parent = 0);
 
+public slots:
     void setName(QString n);
-    const QString *name();
-
-    void setTime(QDateTime w);
-    QString time();
-
     void setStatus (bool n );
+    void setTime(QDateTime w);
+
+signals:
+    void textEmitted(const QString &);
+
+public:
+    const QString *name();
     const QString *status();
+    QString time();
 
 private:
     // What was the name of the package?

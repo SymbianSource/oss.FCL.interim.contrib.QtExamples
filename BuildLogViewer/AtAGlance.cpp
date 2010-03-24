@@ -4,6 +4,7 @@
 #include <QDomElement>
 #include <QDomNode>
 #include <QMessageBox>
+#include <QGroupBox>
 
 #include <QtGlobal>
 #include <QRegExp>
@@ -19,7 +20,9 @@ using namespace std;
 #include "AtAGlance.h"
 
 AtAGlance::AtAGlance(QString filename, QWidget *parent)
+        : QWidget(parent), ui(new Ui::BuildResultsForm)
 {
+    ui->setupUi(this);
     setAttribute(Qt::WA_DeleteOnClose);
 
     QFile file(filename);
@@ -132,6 +135,8 @@ void AtAGlance::traveAndPopulate(QDomElement e)
 
 void AtAGlance::decideOnLayout()
 {
+    // QHBoxLayout *hLayout = new QHBoxLayout(this);
+    // QGroupBox *groupBox = new QGroupBox( "Synopsis of Build" );
     QGridLayout *layout = new QGridLayout(this);
 
     layout->addWidget(new QLabel("What: "), 1, 1);
@@ -140,4 +145,6 @@ void AtAGlance::decideOnLayout()
     layout->addWidget(new QLabel(m_buildStatus->time()) ,2,2);
     layout->addWidget(new QLabel("Status: "), 3, 1);
     layout->addWidget(new QLabel(*m_buildStatus->status()),3,2);
+
+    // hLayout->addWidget(layout);
 }
