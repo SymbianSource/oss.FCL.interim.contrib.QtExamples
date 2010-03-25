@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui sql svg
+QT       += core gui sql svg webkit network
 
 TARGET = SeafoodTabbed
 TEMPLATE = app

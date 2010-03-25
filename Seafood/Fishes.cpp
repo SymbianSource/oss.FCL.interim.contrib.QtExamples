@@ -21,8 +21,8 @@ Fishes::Fishes(QObject *parent) : QObject(parent)
         qWarning("db not found ");
     } else {
         qWarning("found db ");
-        qWarning(dbFile.toStdString().c_str());
     }
+    qWarning(dbFile.toStdString().c_str());
     db.setDatabaseName(dbFile);
 
     // Open databasee
