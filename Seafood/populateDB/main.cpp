@@ -56,8 +56,8 @@ void insertEco(int lastID, QString details)
 
     QSqlQuery query;
 
-    query.prepare("INSERT INTO ecoDetails (lastID, details) VALUES (:lastID,:details) ");
-    query.bindValue(":lastID", lastID);
+    query.prepare("INSERT INTO ecoDetails (fid, details) VALUES (:fid,:details) ");
+    query.bindValue(":fid", lastID);
     query.bindValue(":details",details);
     if (!query.exec())
     {
@@ -86,7 +86,7 @@ int main(int argc, char *argv[])
     qDebug() << "DB: database opened " << endl;
 
     createTable("create table fish "
-                "(lastID integer primary key, "
+                "(fid integer primary key, "
                 "name varchar(32),"
                 "category int,"
                 "calories int,"
@@ -97,7 +97,7 @@ int main(int argc, char *argv[])
                 "sodium int)");
 
     createTable ("create table ecoDetails (eid integer primary key, "
-                 "lastID integer, "
+                 "fid integer, "
                  "details varchar(128))");
 
     int lastID = -1;
