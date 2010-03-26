@@ -15,12 +15,13 @@ public:
     const QStringList GetOK();
     const QStringList GetWorst();
 
+    QString getEcoDetails(QString name);
+
 private:
     void populate(TCATEGORIES cat);
     QStringList bestFish;
     QStringList okFish;
     QStringList worstFish;
-    // QSqlDatabase db;
 };
 
 #endif // FISHES_H

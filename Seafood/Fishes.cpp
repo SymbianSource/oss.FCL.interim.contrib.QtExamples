@@ -12,9 +12,15 @@ Fishes::Fishes(QObject *parent) : QObject(parent)
     // Find QSLite driver
     db = QSqlDatabase::addDatabase("QSQLITE");
 
+#ifdef Q_OS_SYMBIAN
     QString dbFile = QDesktopServices::storageLocation(QDesktopServices::DataLocation)
                      + '/'  // Qt Universal file separator
                      + "seafood.db";
+#else
+    // Windows assumed.
+    // unfortunately, "C:\Documents and Settings" is corrupted on my home PC. hard coding until I fix it. -jk
+    QString dbFile = "C:/workspace/QtExamples/Seafood/populateDB/seafood.db";
+#endif
     QFile f(dbFile);
     std::string errString(dbFile.toStdString());
     if (!f.exists()) {
@@ -52,6 +58,33 @@ Fishes::Fishes(QObject *parent) : QObject(parent)
         this->populate(EPresentOK);
         this->populate(EPresentWorst);
     }
+}
+
+/* given the name of a fish, return a list of eco details in html format.
+ */
+QString Fishes::getEcoDetails(QString name)
+{
+    QString detailsInHtml;
+    QSqlQuery query;
+
+    query.prepare("select details from ecoDetails "
+                  "where fid in (select fid from fish where name = :name )");
+    query.bindValue(":name",name);
+
+    if (!query.exec())
+    {
+        QString errCode =  "failed to get eco details " + query.lastError().text();
+        qWarning(errCode.toStdString().c_str());
+    }
+
+    detailsInHtml.append("<html> <title>name</title> <body> <h2>Eco Details</h2> <ul> ");
+    while (query.next()){
+        detailsInHtml.append( " <li>");
+        detailsInHtml.append( query.value(0).toString());
+        detailsInHtml.append( "</li> " );
+    }
+    detailsInHtml.append("</ul> </body> </html> ");
+    return  detailsInHtml;
 }
 
 void Fishes::populate(TCATEGORIES cat)

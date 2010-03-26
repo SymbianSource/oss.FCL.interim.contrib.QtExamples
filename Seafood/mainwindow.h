@@ -3,10 +3,12 @@
 
 #include <QMainWindow>
 
+class Fishes;
 class QStackedWidget;
 class QTabWidget;
 class QListWidget;
 class QWebView;
+class QSqlQueryModel;
 
 namespace Ui {
     class MainWindow;
@@ -21,6 +23,7 @@ public:
     enum {EListPage = 0,
           EEcoPage,
           ENutritionPage};
+    enum ListIndex {EBestList =0, EOkList, EWorstList};
 
     void createMenus();
 
@@ -30,6 +33,7 @@ public slots:
     void displayEcoDetails();
     void displayList();
     void displayNutrition();
+    void setCurrentList(int l);
 
 protected:
     void changeEvent(QEvent *e);
@@ -44,6 +48,10 @@ private:
 
     QWebView *ecoDetails;
 
+    QSqlQueryModel *model;
+
+    ListIndex index; // which list is currently displayed in tab widget
+    Fishes *fishDb;
     QAction *ecoAction;
     QAction *fishesAction;
     QAction *nuAction;
