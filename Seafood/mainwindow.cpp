@@ -84,7 +84,7 @@ void MainWindow::createMenus()
 
         verAction = new QAction(tr("&Version"),this);
         menuBar()->addAction(verAction);
-        connect(verAction, SIGNAL(triggered()),this, SLOT(displayVersion()));
+        connect(verAction, SIGNAL(triggered()),this, SLOT(displayPath()));
 
         exitAction = new QAction(tr("&Exit"),this);
         menuBar()->addAction(exitAction);
@@ -105,22 +105,40 @@ void MainWindow::displayEcoDetails()
 {
 
     QString selectedName;
+    QListWidgetItem *item=NULL;
+
+
     switch (this->index)
     {
+
     case EBestList:
-        selectedName = this->bestList->currentItem()->text();
+        item = this->bestList->currentItem();
+        if (item)
+        {
+            selectedName = item->text();
+        }
+
         break;
     case EOkList:
-        selectedName = this->okList->currentItem()->text();
+        item = this->okList->currentItem();
+        if (item) {
+            selectedName = item->text();
+        }
         break;
     case EWorstList:
-        selectedName = this->worstList->currentItem()->text();
+        item = this->worstList->currentItem();
+        if (item) {
+            selectedName = item->text();
+        }
         break;
     }
 
-    this->ecoDetails->setHtml( this->fishDb->getEcoDetails(selectedName));
-
-    this->stackedWidget->setCurrentIndex(MainWindow::EEcoPage);
+    if (!item) {
+        QMessageBox::information(this,"warning","select an item from list." );
+    } else {
+        this->ecoDetails->setHtml( this->fishDb->getEcoDetails(selectedName));
+        this->stackedWidget->setCurrentIndex(MainWindow::EEcoPage);
+    }
 }
 
 void MainWindow::displayList()
@@ -130,16 +148,7 @@ void MainWindow::displayList()
 
 void MainWindow::displayPath()
 {
-    QString dbFile = QDesktopServices::storageLocation(QDesktopServices::DataLocation)
-                     + '/'  // Qt Universal file separator
-                     + "seafood.db";
-    QFile f(dbFile);
-    if (f.exists()) {
-        QMessageBox::information(this,"db not found ", dbFile);
-    } else {
-        QMessageBox::information(this,"found db @ ", dbFile);
-    }
-
+    QMessageBox::information(this, "db Error",this->fishDb->GetDbErr());
 }
 
 void MainWindow::setCurrentList(int l)
@@ -156,8 +165,6 @@ void MainWindow::setCurrentList(int l)
         this->index = EWorstList;
         break;
     }
-
-
 }
 
 void MainWindow::changeEvent(QEvent *e)

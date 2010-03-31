@@ -14,6 +14,7 @@ public:
     const QStringList GetBest();
     const QStringList GetOK();
     const QStringList GetWorst();
+    const QString GetDbErr() { return dbErrString; };
 
     QString getEcoDetails(QString name);
 
@@ -22,6 +23,7 @@ private:
     QStringList bestFish;
     QStringList okFish;
     QStringList worstFish;
+    QString dbErrString;
 };
 
 #endif // FISHES_H

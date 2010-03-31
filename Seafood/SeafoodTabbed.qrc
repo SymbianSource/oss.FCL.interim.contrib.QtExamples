@@ -1,5 +1,1 @@
-<RCC>
-    <qresource prefix="/database">
-        <file>seafood.db</file>
-    </qresource>
-</RCC>
+<RCC/>

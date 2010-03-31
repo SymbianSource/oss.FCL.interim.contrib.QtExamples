@@ -8,6 +8,7 @@
 Fishes::Fishes(QObject *parent) : QObject(parent)
 {
     QSqlDatabase db;
+    this->dbErrString = "noErr";
 
     // Find QSLite driver
     db = QSqlDatabase::addDatabase("QSQLITE");
@@ -16,6 +17,7 @@ Fishes::Fishes(QObject *parent) : QObject(parent)
     QString dbFile = QDesktopServices::storageLocation(QDesktopServices::DataLocation)
                      + '/'  // Qt Universal file separator
                      + "seafood.db";
+    dbFile.replace("/","\\");
 #else
     // Windows assumed.
     // unfortunately, "C:\Documents and Settings" is corrupted on my home PC. hard coding until I fix it. -jk
@@ -34,7 +36,7 @@ Fishes::Fishes(QObject *parent) : QObject(parent)
     // Open databasee
     if(!db.open())
     {
-        std::string errCode =  db.lastError().databaseText().toStdString();
+        this->dbErrString =  db.lastError().databaseText();
 
         qWarning("DB: failed to open.");
 
@@ -66,6 +68,7 @@ QString Fishes::getEcoDetails(QString name)
 {
     QString detailsInHtml;
     QSqlQuery query;
+    this->dbErrString = "noErr";
 
     query.prepare("select details from ecoDetails "
                   "where fid in (select fid from fish where name = :name )");
@@ -75,6 +78,7 @@ QString Fishes::getEcoDetails(QString name)
     {
         QString errCode =  "failed to get eco details " + query.lastError().text();
         qWarning(errCode.toStdString().c_str());
+        this->dbErrString = name + " " + query.lastError().text();
     }
 
     detailsInHtml.append("<html> <title>name</title> <body> <h2>Eco Details</h2> <ul> ");

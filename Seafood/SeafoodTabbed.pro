@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui sql svg webkit network
+QT       += core gui sql webkit
 
 TARGET = SeafoodTabbed
 TEMPLATE = app
@@ -19,5 +19,8 @@ HEADERS  += mainwindow.h \
 
 FORMS    += mainwindow.ui
 
-RESOURCES += \
-    SeafoodTabbed.qrc
+databasefiles.sources = seafood.db
+databasefiles.path = .
+
+DEPLOYMENT += databasefiles
+
