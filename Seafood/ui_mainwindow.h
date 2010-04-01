@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Mon Mar 29 16:27:58 2010
+** Created: Thu Apr 1 11:35:19 2010
 **      by: Qt User Interface Compiler version 4.6.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -14,6 +14,7 @@
 #include <QtGui/QAction>
 #include <QtGui/QApplication>
 #include <QtGui/QButtonGroup>
+#include <QtGui/QFrame>
 #include <QtGui/QHeaderView>
 #include <QtGui/QLabel>
 #include <QtGui/QMainWindow>
@@ -30,11 +31,13 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralWidget;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QVBoxLayout *verticalLayout;
-    QLabel *label;
+    QLabel *header;
+    QFrame *line;
+    QLabel *amountServing;
     QTableWidget *tableWidget;
-    QLabel *label_2;
+    QLabel *usda;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -46,31 +49,44 @@ public:
         MainWindow->resize(361, 640);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
-        widget = new QWidget(centralWidget);
-        widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(60, 80, 258, 242));
-        verticalLayout = new QVBoxLayout(widget);
+        layoutWidget = new QWidget(centralWidget);
+        layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
+        layoutWidget->setGeometry(QRect(0, 0, 258, 242));
+        verticalLayout = new QVBoxLayout(layoutWidget);
         verticalLayout->setSpacing(6);
         verticalLayout->setContentsMargins(11, 11, 11, 11);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         verticalLayout->setContentsMargins(0, 0, 0, 0);
-        label = new QLabel(widget);
-        label->setObjectName(QString::fromUtf8("label"));
+        header = new QLabel(layoutWidget);
+        header->setObjectName(QString::fromUtf8("header"));
         QFont font;
         font.setPointSize(14);
-        label->setFont(font);
+        header->setFont(font);
 
-        verticalLayout->addWidget(label);
+        verticalLayout->addWidget(header);
 
-        tableWidget = new QTableWidget(widget);
+        line = new QFrame(layoutWidget);
+        line->setObjectName(QString::fromUtf8("line"));
+        line->setFrameShape(QFrame::HLine);
+        line->setFrameShadow(QFrame::Sunken);
+
+        verticalLayout->addWidget(line);
+
+        amountServing = new QLabel(layoutWidget);
+        amountServing->setObjectName(QString::fromUtf8("amountServing"));
+        amountServing->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        verticalLayout->addWidget(amountServing);
+
+        tableWidget = new QTableWidget(layoutWidget);
         tableWidget->setObjectName(QString::fromUtf8("tableWidget"));
 
         verticalLayout->addWidget(tableWidget);
 
-        label_2 = new QLabel(widget);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
+        usda = new QLabel(layoutWidget);
+        usda->setObjectName(QString::fromUtf8("usda"));
 
-        verticalLayout->addWidget(label_2);
+        verticalLayout->addWidget(usda);
 
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
@@ -92,8 +108,9 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", 0, QApplication::UnicodeUTF8));
-        label->setText(QApplication::translate("MainWindow", "Nutrition information", 0, QApplication::UnicodeUTF8));
-        label_2->setText(QApplication::translate("MainWindow", "Source: USDA", 0, QApplication::UnicodeUTF8));
+        header->setText(QApplication::translate("MainWindow", "Nutrition information", 0, QApplication::UnicodeUTF8));
+        amountServing->setText(QApplication::translate("MainWindow", "	Amount per serving", 0, QApplication::UnicodeUTF8));
+        usda->setText(QApplication::translate("MainWindow", "Source: USDA", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

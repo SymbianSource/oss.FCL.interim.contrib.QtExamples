@@ -19,7 +19,7 @@ HEADERS  += mainwindow.h \
 
 FORMS    += mainwindow.ui
 
-databasefiles.sources = seafood.db
+databasefiles.sources = populateDB/seafood.db
 databasefiles.path = .
 
 DEPLOYMENT += databasefiles
