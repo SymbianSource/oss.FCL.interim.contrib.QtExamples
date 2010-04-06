@@ -28,8 +28,8 @@ public:
     void createMenus();
 
 public slots:
+    QString currentlySelectedItem();
     void displayVersion();
-    void displayPath();
     void displayEcoDetails();
     void displayList();
     void displayNutrition();

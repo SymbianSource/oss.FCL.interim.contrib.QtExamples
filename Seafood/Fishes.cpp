@@ -8,7 +8,6 @@
 Fishes::Fishes(QObject *parent) : QObject(parent)
 {
     QSqlDatabase db;
-    this->dbErrString = "noErr";
 
     // Find QSLite driver
     db = QSqlDatabase::addDatabase("QSQLITE");
@@ -24,7 +23,6 @@ Fishes::Fishes(QObject *parent) : QObject(parent)
     QString dbFile = "C:/workspace/QtExamples/Seafood/populateDB/seafood.db";
 #endif
     QFile f(dbFile);
-    std::string errString(dbFile.toStdString());
     if (!f.exists()) {
         qWarning("db not found ");
     } else {
@@ -36,8 +34,6 @@ Fishes::Fishes(QObject *parent) : QObject(parent)
     // Open databasee
     if(!db.open())
     {
-        this->dbErrString =  db.lastError().databaseText();
-
         qWarning("DB: failed to open.");
 
         this->bestFish << "Abalone (farmed)" << "Anchovy, European" << "Barramundi U.S."
@@ -68,7 +64,6 @@ QString Fishes::getEcoDetails(QString name)
 {
     QString detailsInHtml;
     QSqlQuery query;
-    this->dbErrString = "noErr";
 
     query.prepare("select details from ecoDetails "
                   "where fid in (select fid from fish where name = :name )");
@@ -78,7 +73,6 @@ QString Fishes::getEcoDetails(QString name)
     {
         QString errCode =  "failed to get eco details " + query.lastError().text();
         qWarning(errCode.toStdString().c_str());
-        this->dbErrString = name + " " + query.lastError().text();
     }
 
     detailsInHtml.append("<html> <title>name</title> <body> <h2>Eco Details</h2> <ul> ");
@@ -89,6 +83,36 @@ QString Fishes::getEcoDetails(QString name)
     }
     detailsInHtml.append("</ul> </body> </html> ");
     return  detailsInHtml;
+}
+
+void Fishes::getNutrition(QString name)
+{
+    QSqlQuery query;
+    QMap<QString, QString> nutrition;
+
+    query.prepare("select calories,fat,protein,omega3,cholesterol,sodium from fish where name = :name ");
+    query.bindValue(":name",name);
+
+    if (!query.exec())
+    {
+        QString errCode =  "failed to get nutrition information " + query.lastError().text();
+        qWarning(errCode.toStdString().c_str());
+    }
+
+    query.next();
+    nutrition["Calories"] = query.value(0).toString();
+    nutrition["Total Fat"] = query.value(1).toString();
+    nutrition["Total Protein"] = query.value(2).toString();
+    nutrition["Omega-3"] = query.value(3).toString();
+    nutrition["Cholesterol"] = query.value(4).toString();
+    nutrition["Sodium"] = query.value(5).toString();
+
+    QMapIterator<QString, QString> i(nutrition);
+    while (i.hasNext())
+    {
+         i.next();
+         qDebug() << i.key() << ": " << i.value() << endl;
+    }
 }
 
 void Fishes::populate(TCATEGORIES cat)
@@ -126,18 +150,18 @@ void Fishes::populate(TCATEGORIES cat)
 }
 
 
-const QStringList Fishes::GetBest()
+const QStringList Fishes::getBest()
 {
 
     return bestFish;
 }
 
-const QStringList Fishes::GetOK()
+const QStringList Fishes::getOK()
 {
     return okFish;
 }
 
-const QStringList Fishes::GetWorst()
+const QStringList Fishes::getWorst()
 {
     return worstFish;
 }

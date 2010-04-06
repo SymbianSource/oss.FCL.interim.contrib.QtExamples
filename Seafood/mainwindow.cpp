@@ -26,15 +26,15 @@ MainWindow::MainWindow(QWidget *parent) :
     this->tabWidget = new QTabWidget;
 
     this->bestList = new QListWidget;
-    this->bestList->addItems(this->fishDb->GetBest());
+    this->bestList->addItems(this->fishDb->getBest());
     this->tabWidget->addTab(this->bestList, "best");
 
     this->okList = new QListWidget;
-    this->okList->addItems(this->fishDb->GetOK());
+    this->okList->addItems(this->fishDb->getOK());
     this->tabWidget->addTab(this->okList, "ok");
 
     this->worstList = new QListWidget;
-    this->worstList->addItems(this->fishDb->GetWorst());
+    this->worstList->addItems(this->fishDb->getWorst());
     this->tabWidget->addTab(this->worstList, "worst");
 
     this->index = EBestList;
@@ -84,7 +84,7 @@ void MainWindow::createMenus()
 
         verAction = new QAction(tr("&Version"),this);
         menuBar()->addAction(verAction);
-        connect(verAction, SIGNAL(triggered()),this, SLOT(displayPath()));
+        connect(verAction, SIGNAL(triggered()),this, SLOT(displayVersion()));
 
         exitAction = new QAction(tr("&Exit"),this);
         menuBar()->addAction(exitAction);
@@ -96,44 +96,42 @@ void MainWindow::displayVersion()
     QMessageBox::information(this,"Qt Version", qVersion());
 }
 
-void MainWindow::displayNutrition()
-{
-    this->stackedWidget->setCurrentIndex(MainWindow::ENutritionPage);
-}
+ QString MainWindow::currentlySelectedItem()
+ {
+     QString selectedName;
+     QListWidgetItem *item=NULL;
+
+     switch (this->index)
+     {
+     case EBestList:
+         item = this->bestList->currentItem();
+         if (item)
+         {
+             selectedName = item->text();
+         }
+
+         break;
+     case EOkList:
+         item = this->okList->currentItem();
+         if (item) {
+             selectedName = item->text();
+         }
+         break;
+     case EWorstList:
+         item = this->worstList->currentItem();
+         if (item) {
+             selectedName = item->text();
+         }
+         break;
+     }
+     return selectedName;
+ }
 
 void MainWindow::displayEcoDetails()
 {
+    QString selectedName = this->currentlySelectedItem();
 
-    QString selectedName;
-    QListWidgetItem *item=NULL;
-
-
-    switch (this->index)
-    {
-
-    case EBestList:
-        item = this->bestList->currentItem();
-        if (item)
-        {
-            selectedName = item->text();
-        }
-
-        break;
-    case EOkList:
-        item = this->okList->currentItem();
-        if (item) {
-            selectedName = item->text();
-        }
-        break;
-    case EWorstList:
-        item = this->worstList->currentItem();
-        if (item) {
-            selectedName = item->text();
-        }
-        break;
-    }
-
-    if (!item) {
+    if (selectedName.isEmpty()) {
         QMessageBox::information(this,"warning","select an item from list." );
     } else {
         this->ecoDetails->setHtml( this->fishDb->getEcoDetails(selectedName));
@@ -141,14 +139,22 @@ void MainWindow::displayEcoDetails()
     }
 }
 
+void MainWindow::displayNutrition()
+{
+    QString selectedName = this->currentlySelectedItem();
+
+    if (selectedName.isEmpty()) {
+        QMessageBox::information(this,"warning","select an item from list." );
+    } else {
+      // this->ecoDetails->setHtml( this->fishDb->getNutrition(selectedName));
+        this->fishDb->getNutrition(selectedName);
+        this->stackedWidget->setCurrentIndex(MainWindow::ENutritionPage);
+    }
+}
+
 void MainWindow::displayList()
 {
     this->stackedWidget->setCurrentIndex(MainWindow::EListPage);
-}
-
-void MainWindow::displayPath()
-{
-    QMessageBox::information(this, "db Error",this->fishDb->GetDbErr());
 }
 
 void MainWindow::setCurrentList(int l)
