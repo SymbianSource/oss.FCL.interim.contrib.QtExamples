@@ -18,9 +18,9 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>0</y>
-      <width>258</width>
-      <height>242</height>
+      <y>10</y>
+      <width>221</width>
+      <height>351</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -54,7 +54,70 @@
       </widget>
      </item>
      <item>
-      <widget class="QTableWidget" name="tableWidget"/>
+      <widget class="QTableWidget" name="tableWidget">
+       <property name="autoScroll">
+        <bool>false</bool>
+       </property>
+       <property name="editTriggers">
+        <set>QAbstractItemView::NoEditTriggers</set>
+       </property>
+       <property name="rowCount">
+        <number>6</number>
+       </property>
+       <property name="columnCount">
+        <number>2</number>
+       </property>
+       <attribute name="horizontalHeaderVisible">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="verticalHeaderVisible">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="verticalHeaderVisible">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="horizontalHeaderVisible">
+        <bool>false</bool>
+       </attribute>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <column/>
+       <column/>
+       <item row="0" column="0">
+        <property name="text">
+         <string>Calories</string>
+        </property>
+       </item>
+       <item row="1" column="0">
+        <property name="text">
+         <string>Total Fat</string>
+        </property>
+       </item>
+       <item row="2" column="0">
+        <property name="text">
+         <string>Total Protein</string>
+        </property>
+       </item>
+       <item row="3" column="0">
+        <property name="text">
+         <string>Omega-3</string>
+        </property>
+       </item>
+       <item row="4" column="0">
+        <property name="text">
+         <string>Cholesterol</string>
+        </property>
+       </item>
+       <item row="5" column="0">
+        <property name="text">
+         <string>Sodium</string>
+        </property>
+       </item>
+      </widget>
      </item>
      <item>
       <widget class="QLabel" name="usda">
@@ -72,7 +135,7 @@
      <x>0</x>
      <y>0</y>
      <width>361</width>
-     <height>20</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>

@@ -1,4 +1,6 @@
 #include <QFile>
+#include <QtGlobal>
+ #include <QDebug>
 #include <QIcon>
 #include <QListWidget>
 #include <QMessageBox>
@@ -52,14 +54,9 @@ MainWindow::MainWindow(QWidget *parent) :
     this->stackedWidget->addWidget(this->ecoDetails); // associated with EEcoPage
 
     // Nutrition page
-    // this->model = new QSqlQueryModel;
-    // this->model->
     this->stackedWidget->addWidget(ui->centralWidget); // associated with ENutritionPage
 
-
     setCentralWidget(stackedWidget);
-
-
 }
 
 MainWindow::~MainWindow()
@@ -146,8 +143,31 @@ void MainWindow::displayNutrition()
     if (selectedName.isEmpty()) {
         QMessageBox::information(this,"warning","select an item from list." );
     } else {
-      // this->ecoDetails->setHtml( this->fishDb->getNutrition(selectedName));
-        this->fishDb->getNutrition(selectedName);
+
+        QMap<Fishes::TNUTRITION, QString> nutrition (this->fishDb->getNutrition(selectedName));
+
+        const int COLUMN = 1;
+        int row=0;
+
+        QTableWidgetItem *newItem;
+        newItem = new QTableWidgetItem(nutrition[Fishes::ECalories] );
+        this->ui->tableWidget->setItem(row++,COLUMN, newItem);
+
+        newItem = new QTableWidgetItem(nutrition[Fishes::ETotalFat] );
+        this->ui->tableWidget->setItem(row++,COLUMN, newItem);
+
+        newItem = new QTableWidgetItem(nutrition[Fishes::ETotalProtein] );
+        this->ui->tableWidget->setItem(row++,COLUMN, newItem);
+
+        newItem = new QTableWidgetItem(nutrition[Fishes::EOmega3] );
+        this->ui->tableWidget->setItem(row++,COLUMN, newItem);
+
+        newItem = new QTableWidgetItem(nutrition[Fishes::ECholesterol] );
+        this->ui->tableWidget->setItem(row++,COLUMN, newItem);
+
+        newItem = new QTableWidgetItem(nutrition[Fishes::ESodium] );
+        this->ui->tableWidget->setItem(row,COLUMN, newItem);
+
         this->stackedWidget->setCurrentIndex(MainWindow::ENutritionPage);
     }
 }

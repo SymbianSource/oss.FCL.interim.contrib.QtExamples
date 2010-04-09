@@ -85,10 +85,10 @@ QString Fishes::getEcoDetails(QString name)
     return  detailsInHtml;
 }
 
-void Fishes::getNutrition(QString name)
+QMap<Fishes::TNUTRITION, QString> Fishes::getNutrition(QString name)
 {
     QSqlQuery query;
-    QMap<QString, QString> nutrition;
+    QMap<TNUTRITION, QString> nutrition;
 
     query.prepare("select calories,fat,protein,omega3,cholesterol,sodium from fish where name = :name ");
     query.bindValue(":name",name);
@@ -100,19 +100,14 @@ void Fishes::getNutrition(QString name)
     }
 
     query.next();
-    nutrition["Calories"] = query.value(0).toString();
-    nutrition["Total Fat"] = query.value(1).toString();
-    nutrition["Total Protein"] = query.value(2).toString();
-    nutrition["Omega-3"] = query.value(3).toString();
-    nutrition["Cholesterol"] = query.value(4).toString();
-    nutrition["Sodium"] = query.value(5).toString();
+    nutrition[ECalories] = query.value(0).toString();
+    nutrition[ETotalFat] = query.value(1).toString();
+    nutrition[ETotalProtein] = query.value(2).toString();
+    nutrition[EOmega3] = query.value(3).toString();
+    nutrition[ECholesterol] = query.value(4).toString();
+    nutrition[ESodium] = query.value(5).toString();
 
-    QMapIterator<QString, QString> i(nutrition);
-    while (i.hasNext())
-    {
-         i.next();
-         qDebug() << i.key() << ": " << i.value() << endl;
-    }
+    return nutrition;
 }
 
 void Fishes::populate(TCATEGORIES cat)

@@ -10,13 +10,15 @@ class Fishes : public QObject
 public:
     Fishes(QObject *parent=0);
     enum TCATEGORIES {EPresentBest=0, EPresentOK, EPresentWorst};
+    enum TNUTRITION {ECalories = 0, ETotalFat, ETotalProtein,
+                     EOmega3, ECholesterol, ESodium, EMaxNutrients };
 
     const QStringList getBest();
     const QStringList getOK();
     const QStringList getWorst();
 
     QString getEcoDetails(QString name);
-    void getNutrition(QString name);
+    QMap<TNUTRITION, QString> getNutrition(QString name);
 
 private:
     void populate(TCATEGORIES cat);
