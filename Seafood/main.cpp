@@ -3,7 +3,7 @@
 
 #include "mainwindow.h"
 
-// By default, Actions is added to the Options menu. The
+// Tech Tip: By default, Actions is added to the Options menu. The
 // idea is to support context menus on non-touch mobiles.
 void disableContextMenu()
 {

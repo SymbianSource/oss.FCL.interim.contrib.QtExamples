@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Thu Apr 8 19:28:20 2010
+** Created: Wed Apr 14 10:17:42 2010
 **      by: Qt User Interface Compiler version 4.6.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -51,7 +51,7 @@ public:
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         layoutWidget = new QWidget(centralWidget);
         layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
-        layoutWidget->setGeometry(QRect(0, 10, 221, 351));
+        layoutWidget->setGeometry(QRect(0, 10, 331, 401));
         verticalLayout = new QVBoxLayout(layoutWidget);
         verticalLayout->setSpacing(6);
         verticalLayout->setContentsMargins(11, 11, 11, 11);
@@ -113,7 +113,7 @@ public:
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 361, 21));
+        menuBar->setGeometry(QRect(0, 0, 361, 20));
         MainWindow->setMenuBar(menuBar);
         mainToolBar = new QToolBar(MainWindow);
         mainToolBar->setObjectName(QString::fromUtf8("mainToolBar"));
@@ -130,7 +130,7 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", 0, QApplication::UnicodeUTF8));
-        header->setText(QApplication::translate("MainWindow", "Nutrition information", 0, QApplication::UnicodeUTF8));
+        header->setText(QApplication::translate("MainWindow", "Nutrition info", 0, QApplication::UnicodeUTF8));
         amountServing->setText(QApplication::translate("MainWindow", "	Amount per serving", 0, QApplication::UnicodeUTF8));
 
         const bool __sortingEnabled = tableWidget->isSortingEnabled();

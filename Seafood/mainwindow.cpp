@@ -23,6 +23,7 @@ MainWindow::MainWindow(QWidget *parent) :
     this->fishDb = new Fishes(this);
 
     this->stackedWidget = new QStackedWidget;
+    this->stackedWidget->setSizePolicy(QSizePolicy::Maximum,QSizePolicy::Maximum);
 
     // lists of fish
     this->tabWidget = new QTabWidget;

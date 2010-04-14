@@ -19,8 +19,8 @@
      <rect>
       <x>0</x>
       <y>10</y>
-      <width>221</width>
-      <height>351</height>
+      <width>331</width>
+      <height>401</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -32,7 +32,7 @@
         </font>
        </property>
        <property name="text">
-        <string>Nutrition information</string>
+        <string>Nutrition info</string>
        </property>
       </widget>
      </item>
@@ -135,7 +135,7 @@
      <x>0</x>
      <y>0</y>
      <width>361</width>
-     <height>21</height>
+     <height>20</height>
     </rect>
    </property>
   </widget>
