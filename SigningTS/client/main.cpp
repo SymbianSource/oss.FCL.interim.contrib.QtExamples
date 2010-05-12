@@ -8,9 +8,11 @@
 
 #include "buffer.h"
 
+const QString BaseURL = "http://localhost:8080/?key=853b128a-0c18-42f2-835f-db9f5b6f7fb9&api=1&cmd=";
+
 QNetworkReply *addIMEI(QNetworkAccessManager *mgr)
 {
-    QString reqPOST = "http://localhost:8080/?key=853b128a-0c18-42f2-835f-db9f5b6f7fb9&api=1&cmd=addIMEI";
+    QString reqPOST = BaseURL + "addIMEI";
     QNetworkRequest request(QUrl(reqPOST.toUtf8()));
     request.setHeader(QNetworkRequest::ContentTypeHeader,"application/xhtml+xml");
 
@@ -31,16 +33,16 @@ QNetworkReply *addIMEI(QNetworkAccessManager *mgr)
 
 QNetworkReply *getDevCert(QNetworkAccessManager *mgr)
 {
-    QString reqPOST = "http://localhost:8080/?key=853b128a-0c18-42f2-835f-db9f5b6f7fb9&api=1&cmd=getDevCert&genID=456723322";
+    QString reqPOST = BaseURL + "getDevCert&genID=456723322";
     QNetworkRequest request(QUrl(reqPOST.toUtf8()));
     request.setHeader(QNetworkRequest::ContentTypeHeader,"application/xhtml+xml");
 
     return mgr->get(request);
 }
 
-QNetworkReply *getSubmission()
+QNetworkReply *getSubmission(QNetworkAccessManager *mgr)
 {
-    QString reqGET = "http://localhost:8080/?key=853b128a-0c18-42f2-835f-db9f5b6f7fb9&api=1&cmd=getSubmission&genID=456723322";
+    QString reqGET = BaseURL + "getSubmission&genID=456723322";
     QNetworkRequest request(QUrl(reqGET.toUtf8()));
 
     return mgr->get(request);

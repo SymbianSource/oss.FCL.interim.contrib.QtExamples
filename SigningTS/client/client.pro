@@ -16,7 +16,10 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp \
-    buffer.cpp
+    buffer.cpp \
+    signingcommoncase.cpp
 
 HEADERS += \
-    buffer.h
+    buffer.h \
+    test.h \
+    signingcommoncase.h
