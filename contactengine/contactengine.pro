@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui webkit
+QT       += core gui webkit sql
 
 TARGET = contactengine
 TEMPLATE = app
@@ -13,10 +13,13 @@ CONFIG += debug
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    contactsengine.cpp
+    contactsengine.cpp \
+    dbtools.cpp
 
 HEADERS  += mainwindow.h \
-    contactsengine.h
+    contactsengine.h \
+    database.h \
+    dbtools.h
 
 FORMS    += mainwindow.ui
 
