@@ -17,7 +17,6 @@ public:
     ~MainWindow();
 
 public slots:
-    void backendSelected(QString );
 
 private:
     Ui::MainWindow *ui;

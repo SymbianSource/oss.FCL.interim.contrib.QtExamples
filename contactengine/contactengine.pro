@@ -19,7 +19,8 @@ SOURCES += main.cpp\
 HEADERS  += mainwindow.h \
     contactsengine.h \
     database.h \
-    dbtools.h
+    dbtools.h \
+    database.h
 
 FORMS    += mainwindow.ui
 

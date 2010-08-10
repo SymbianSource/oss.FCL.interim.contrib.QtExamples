@@ -1,27 +1,27 @@
 #include <QContact>
 #include <QContactAddress>
+#include <QContactName>
 #include <QContactOrganization>
 #include <QContactPhoneNumber>
 
 #include "contactsengine.h"
+
+#include <QDebug>
 
 using namespace QtMobility;
 
 ContactsEngine::ContactsEngine(QObject *parent) :
     QAbstractListModel(parent)
 {
-    this->m_manager = 0;
-}
-ContactsEngine::~ContactsEngine()
-{
-    QList<QContactManager*> initialisedManagers = m_initialisedManagers.values();
-    while (!initialisedManagers.isEmpty()) {
-        QContactManager *deleteMe = initialisedManagers.takeFirst();
-        delete deleteMe;
-    }
+    this->m_manager =0 ;
 }
 
-void ContactsEngine::setManager(QString aMgrName)
+ContactsEngine::~ContactsEngine()
+{
+
+}
+
+void ContactsEngine::setManager(const QString & aMgrName)
 {
     QString managerUri = m_availableManagers.value(aMgrName);
 
@@ -43,17 +43,9 @@ void ContactsEngine::setManager(QString aMgrName)
         }
         m_initialisedManagers.insert(managerUri, m_manager);
     }
-
-    // compute a new list of contact names
-    QStringList displayNames;
-    QList<QContact> c = this->m_manager->contacts();
-
-    // signal that the manager has changed.
-
-    // emit managerChanged(m_manager);
-
-    // and... rebuild the list.
-    // rebuildList(m_currentFilter);
+//    qDebug() << "Dump Object: " << endl;
+//    m_manager->dumpObjectInfo(); // from QObject
+    this->dumpContactMgr(); // private helper function
 }
 
 void ContactsEngine::populateAddresses()
@@ -265,15 +257,42 @@ QStringList ContactsEngine::dataSources()
 int ContactsEngine::rowCount(const QModelIndex &parent) const
  {
     QList<QContact> allContacts;
-    allContacts = this->m_manager->contacts();
-    // return stringList.count();
-    return allContacts.count();
+    int rc = 0;
+    if (this->m_manager)
+    {
+        allContacts = this->m_manager->contacts();
+        // return stringList.count();
+        if (!allContacts.isEmpty())
+            rc = allContacts.count();
+    }
+    return rc;
  }
+
+void ContactsEngine::enumerateMgrs()
+{
+    QStringList mgrs = QContactManager::availableManagers();
+    qDebug() << "Enumerate available Contact Managers:" << endl;
+    foreach(QString m, mgrs)
+        qDebug() << "\tmgr: " << m << endl;
+    qDebug() << endl;
+}
+
+// dump the current contact manager.
+void  ContactsEngine::dumpContactMgr()
+{
+    qDebug() << "Dump Contact Manager:" << endl;
+    qDebug() << "\tname: " << this->m_manager->managerName() << endl;
+    qDebug() << "\tURI: "  << this->m_manager->managerUri() << endl;
+    qDebug() << "\tVersion: "  << this->m_manager->managerVersion() << endl;
+    qDebug() << "\tCount:" << this->m_manager->contacts().count() << endl;
+    qDebug() << endl;
+}
 
 QVariant ContactsEngine::data(const QModelIndex &index, int role) const
  {
     QVariant rc;
     QList<QContact> allContacts;
+    QContact c;
 
     allContacts = this->m_manager->contacts();
 
@@ -281,7 +300,15 @@ QVariant ContactsEngine::data(const QModelIndex &index, int role) const
          return rc;
     }
     if (role == Qt::DisplayRole) {
-        rc = QVariant(allContacts.at(index.row()).displayLabel());
+        //rc = QVariant(allContacts.at(index.row()).displayLabel());
+        c = allContacts.at(index.row());
+        // organizations do not have first and last names.  So the displayLabel() is empty.
+        QContactDetail cd = c.detail(QContactName::DefinitionName);
+        if (cd.isEmpty()) {
+            rc = QVariant (c.detail(QContactOrganization::DefinitionName).value(QContactOrganization::FieldDepartment) );
+        } else {
+            rc = QVariant ( c.displayLabel());
+        }
     }
     return rc;
  }
