@@ -1,0 +1,9 @@
+#ifndef DATABASE_H
+#define DATABASE_H
+
+
+enum { SITE_LONDON=0, SITE_FOSTER, SITE_TOKYO };
+enum { DEPT_TDM=0, DEPT_MARKETING, DEPT_IT };
+
+
+#endif // DATABASE_H
