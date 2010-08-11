@@ -27,6 +27,11 @@ FORMS    += mainwindow.ui
 CONFIG += mobility
 MOBILITY = contacts
 
+databasefiles.sources = contacts.csv
+databasefiles.path = .
+
+DEPLOYMENT += databasefiles
+
 symbian {
     TARGET.UID3 = 0xec200759
     # TARGET.CAPABILITY += 

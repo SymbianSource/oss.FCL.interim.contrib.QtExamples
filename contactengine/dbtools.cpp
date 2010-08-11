@@ -117,11 +117,8 @@ void DBTools::importCSV(QString fileName)
         {
             file.readLine(buf, sizeof(buf));
             QString string(buf);
-            //qDebug() << string;
-            QStringList stringList = string.split(",");
 
-            //qDebug() << "count: " << stringList.count() << endl;
-            QStringListIterator iter(stringList);
+            QStringList stringList = string.split(",");
 
             QString strName;
             QString strMobile;
