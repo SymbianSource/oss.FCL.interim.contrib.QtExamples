@@ -1,4 +1,7 @@
 #include <QComboBox>
+#include <QMessageBox>
+
+#include <QDebug>
 
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
@@ -10,20 +13,24 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     this->ce = new ContactsEngine(this);
-  //  this->ce->enumerateMgrs();
-    this->ce->setManager(QString("memory"));
+
+    connect(this->ce, SIGNAL(errorOccurred(QString)),
+            this,SLOT(errorOccurred(QString)));
 
     connect(ui->comboBox, SIGNAL( activated ( const QString &  )),
             this->ce, SLOT(setManager(const QString &) ));
 
+    this->ce->createManager();
+
     ui->comboBox->addItems(this->ce->dataSources());
-    this->ce->populateAddresses();
- //   this->ce->enumerateMgrs();
-  //  this->ce->dumpContactMgr();
     ui->listView->setModel(this->ce);
 }
 
-
+void MainWindow::errorOccurred(QString errMsg)
+{
+    QMessageBox::warning(this,"Err Routed",errMsg);
+    qDebug() << errMsg << endl;
+}
 
 MainWindow::~MainWindow()
 {

@@ -2,8 +2,8 @@
 #define CONTACTSENGINE_H
 
 #include <QAbstractListModel>
-
 #include <QContactManager>
+#include <QPointer>
 
 #include "contactsengine.h"
 
@@ -28,18 +28,17 @@ public:
     void populateAddresses();
     void dumpContactMgr(); // use for debugging. Hard to inspect it via Qt Creator.
     void enumerateMgrs();
+    void createManager();
 
 signals:
-    void managerChanged(QStringList containNames);
+    void errorOccurred(QString errMsg); // when a error message
 
 public slots:
     void setManager(const QString &aMgr);
 
 private:
-    QContactManager *m_manager;
     QMap<QString, QString> m_availableManagers;
-    QMap<QString, QContactManager*> m_initialisedManagers;
-
+    QPointer<QContactManager> m_manager;
 };
 
 #endif // CONTACTSENGINE_H

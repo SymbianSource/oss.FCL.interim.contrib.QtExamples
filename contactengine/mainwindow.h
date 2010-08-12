@@ -17,6 +17,7 @@ public:
     ~MainWindow();
 
 public slots:
+    void errorOccurred(QString errMsg);
 
 private:
     Ui::MainWindow *ui;

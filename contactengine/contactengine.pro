@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui webkit sql
+QT       += core gui sql
 
 TARGET = contactengine
 TEMPLATE = app
@@ -22,6 +22,7 @@ HEADERS  += mainwindow.h \
     dbtools.h \
     database.h
 
+
 FORMS    += mainwindow.ui
 
 CONFIG += mobility
@@ -34,7 +35,7 @@ DEPLOYMENT += databasefiles
 
 symbian {
     TARGET.UID3 = 0xec200759
-    # TARGET.CAPABILITY += 
+    TARGET.CAPABILITY += ReadUserData WriteUserData
     TARGET.EPOCSTACKSIZE = 0x14000
     TARGET.EPOCHEAPSIZE = 0x020000 0x800000
 }

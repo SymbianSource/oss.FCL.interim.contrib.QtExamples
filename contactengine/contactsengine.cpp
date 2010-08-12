@@ -4,6 +4,7 @@
 #include <QContactOrganization>
 #include <QContactPhoneNumber>
 
+
 #include "contactsengine.h"
 
 #include <QDebug>
@@ -13,7 +14,7 @@ using namespace QtMobility;
 ContactsEngine::ContactsEngine(QObject *parent) :
     QAbstractListModel(parent)
 {
-    this->m_manager =0 ;
+    this->m_manager = 0;
 }
 
 ContactsEngine::~ContactsEngine()
@@ -21,31 +22,57 @@ ContactsEngine::~ContactsEngine()
 
 }
 
-void ContactsEngine::setManager(const QString & aMgrName)
+//void ContactsEngine::createManager()
+//{
+//    // this->m_manager = new QContactManager("symbian");
+//    // let's try the default.
+//    this->m_manager = new QContactManager();
+//}
+
+void ContactsEngine::createManager()
 {
-    QString managerUri = m_availableManagers.value(aMgrName);
+    // adapted from http://wiki.forum.nokia.com/index.php/Finding_contact_manager_in_Qt
 
-    // first, check to see if they reselected the same backend.
-    if (m_manager && m_manager->managerUri() == managerUri)
-        return;
+    // Get list of different contact back-ends
+    QStringList availableManagers = QContactManager::availableManagers();
 
-    // the change is real.  update.
-    if (m_initialisedManagers.contains(managerUri)) {
-        m_manager = m_initialisedManagers.value(managerUri);
-    } else {
-        m_manager = QContactManager::fromUri(managerUri);
-        if (m_manager->error()) {
-            // todo switch to qDebug()
-            // QMessageBox::information(this, tr("Failed!"), QString("Failed to open store!\n(error code %1)").arg(m_manager->error()));
+    QList<QContactLocalId> contactIds;
+    // Try to find contacts from some back-end
+    while (!availableManagers.isEmpty()) {
+        // Get some manager
+        m_manager = new QContactManager(availableManagers.first());
+        availableManagers.removeFirst();
+
+        // Contacts exists?
+        contactIds = m_manager->contactIds();
+        if (!contactIds.isEmpty()) {
+            // Contact found
+            availableManagers.clear();
+            break;
+        }
+        else {
+            // Not found, try the next manager
             delete m_manager;
             m_manager = 0;
-            return;
         }
-        m_initialisedManagers.insert(managerUri, m_manager);
     }
-//    qDebug() << "Dump Object: " << endl;
-//    m_manager->dumpObjectInfo(); // from QObject
-    this->dumpContactMgr(); // private helper function
+
+    // Use default if no contact found from any back-end
+    if (!m_manager) {
+        m_manager = new QContactManager();
+    }
+
+    // Show message to the user
+    QString msg = QString("Manager %1 created, that has %2 contacts")
+                  .arg(m_manager->managerName()).arg(contactIds.count());
+
+   // emit errorOccurred(msg);
+}
+
+
+void ContactsEngine::setManager(const QString & aMgrName)
+{
+   // noop
 }
 
 void ContactsEngine::populateAddresses()
@@ -273,7 +300,10 @@ void ContactsEngine::enumerateMgrs()
     QStringList mgrs = QContactManager::availableManagers();
     qDebug() << "Enumerate available Contact Managers:" << endl;
     foreach(QString m, mgrs)
+    {
         qDebug() << "\tmgr: " << m << endl;
+        this->dumpContactMgr();
+    }
     qDebug() << endl;
 }
 
@@ -281,10 +311,14 @@ void ContactsEngine::enumerateMgrs()
 void  ContactsEngine::dumpContactMgr()
 {
     qDebug() << "Dump Contact Manager:" << endl;
-    qDebug() << "\tname: " << this->m_manager->managerName() << endl;
-    qDebug() << "\tURI: "  << this->m_manager->managerUri() << endl;
-    qDebug() << "\tVersion: "  << this->m_manager->managerVersion() << endl;
-    qDebug() << "\tCount:" << this->m_manager->contacts().count() << endl;
+    if (this->m_manager) {
+        qDebug() << "\tname: " << this->m_manager->managerName() << endl;
+        qDebug() << "\tURI: "  << this->m_manager->managerUri() << endl;
+        qDebug() << "\tVersion: "  << this->m_manager->managerVersion() << endl;
+        qDebug() << "\tCount:" << this->m_manager->contacts().count() << endl;
+    } else {
+        qDebug() << "\t Contact Manager set to zero." << endl;
+    }
     qDebug() << endl;
 }
 
