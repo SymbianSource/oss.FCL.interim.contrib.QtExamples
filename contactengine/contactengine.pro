@@ -28,6 +28,9 @@ FORMS    += mainwindow.ui
 CONFIG += mobility
 MOBILITY = contacts
 
+unix:INCLUDEPATH += /home/johnk/libs/include/QtContacts /home/johnk/libs/include/
+unix:LIBS += -L/home/johnk/libs/lib -lQtContacts
+
 databasefiles.sources = contacts.csv
 databasefiles.path = .
 
