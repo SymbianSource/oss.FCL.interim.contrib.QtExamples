@@ -29,6 +29,7 @@ public:
     void dumpContactMgr(); // use for debugging. Hard to inspect it via Qt Creator.
     void enumerateMgrs();
     void createManager();
+    void createManagerSF();
 
 signals:
     void errorOccurred(QString errMsg); // when a error message
@@ -37,8 +38,12 @@ public slots:
     void setManager(const QString &aMgr);
 
 private:
+    QString errorString(QContactManager::Error);
+
+private:
     QMap<QString, QString> m_availableManagers;
     QPointer<QContactManager> m_manager;
+    QPointer<QContactManager> m_manager_sf;
 };
 
 #endif // CONTACTSENGINE_H

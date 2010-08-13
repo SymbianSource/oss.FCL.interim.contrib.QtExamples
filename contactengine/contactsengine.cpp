@@ -22,12 +22,71 @@ ContactsEngine::~ContactsEngine()
 
 }
 
-//void ContactsEngine::createManager()
-//{
-//    // this->m_manager = new QContactManager("symbian");
-//    // let's try the default.
-//    this->m_manager = new QContactManager();
-//}
+void ContactsEngine::createManagerSF()
+{
+    // let's try the default.
+    this->m_manager_sf = new QContactManager("memory");
+    // Debugger confirms this is hit, Qt Simulator doesn't display QMessageBox but
+    // the associated control window shows it is the top level window.
+    // emit this->errorOccurred(this->errorString(this->m_manager_sf->error()));
+}
+
+QString ContactsEngine::errorString(QContactManager::Error aErr)
+{
+    QString err;
+    switch(aErr)
+    {
+    case QContactManager::NoError:
+        err = "No Error";
+        break;
+    case QContactManager::DoesNotExistError:
+        err = "Does Not Exist Error ";
+        break;
+    case QContactManager::AlreadyExistsError:
+        err = "Already Exists Error";
+        break;
+    case QContactManager::InvalidDetailError:
+        err = "Invalid Detail Error";
+        break;
+    case QContactManager::InvalidRelationshipError:
+        err = "Invalid Relationship Error";
+        break;
+    case QContactManager::LockedError:
+        err = "Locked Error";
+        break;
+    case QContactManager::DetailAccessError:
+        err = "Detail Access Error";
+        break;
+    case QContactManager::PermissionsError:
+        err = "Permissions Error";
+        break;
+    case QContactManager::OutOfMemoryError:
+        err = "Out Of Memory Error";
+        break;
+    case QContactManager::NotSupportedError:
+        err = "Not Supported Error";
+        break;
+    case QContactManager::BadArgumentError:
+        err = "Bad Argument Error";
+        break;
+    case QContactManager::UnspecifiedError:
+        err = "Unspecified Error";
+        break;
+    case QContactManager::VersionMismatchError:
+        err = "Version Mismatch Error";
+        break;
+    case QContactManager::LimitReachedError:
+        err = "Limit Reached Error";
+        break;
+    case QContactManager::InvalidContactTypeError:
+        err = "Invalid Contact Type Error";
+        break;
+    default:
+        err = "Unknown Error";
+        break;
+    }
+    return err;
+}
 
 void ContactsEngine::createManager()
 {
@@ -109,7 +168,9 @@ void ContactsEngine::populateAddresses()
     address->setPostcode("94404");
     contact->saveDetail(address);
 
-    this->m_manager->saveContact(contact);
+    this->m_manager_sf->saveContact(contact);
+    qDebug() << "cm sf status: " << this->errorString(this->m_manager_sf->error());
+
     // Note that the caller retains ownership of the detail.
     delete dept;
     while (!departmentName.isEmpty())
@@ -141,7 +202,9 @@ void ContactsEngine::populateAddresses()
     address->setPostcode("94404");
     contact->saveDetail(address);
 
-    this->m_manager->saveContact(contact);
+    this->m_manager_sf->saveContact(contact);
+    qDebug() << "cm sf status: " << this->errorString(this->m_manager_sf->error());
+
     delete dept;
     while (!departmentName.isEmpty())
         departmentName.takeFirst();
@@ -171,7 +234,9 @@ void ContactsEngine::populateAddresses()
     address->setPostcode("94404");
     contact->saveDetail(address);
 
-    this->m_manager->saveContact(contact);
+    this->m_manager_sf->saveContact(contact);
+    qDebug() << "cm sf status: " << this->errorString(this->m_manager_sf->error());
+
     delete dept;
     while (!departmentName.isEmpty())
         departmentName.takeFirst();
@@ -201,7 +266,9 @@ void ContactsEngine::populateAddresses()
     address->setPostcode("94025");
     contact->saveDetail(address);
 
-    this->m_manager->saveContact(contact);
+    this->m_manager_sf->saveContact(contact);
+    qDebug() << "cm sf status: " << this->errorString(this->m_manager_sf->error());
+
     delete dept;
     while (!departmentName.isEmpty())
         departmentName.takeFirst();
@@ -232,7 +299,9 @@ void ContactsEngine::populateAddresses()
     address->setPostcode("94025");
     contact->saveDetail(address);
 
-    this->m_manager->saveContact(contact);
+    this->m_manager_sf->saveContact(contact);
+    qDebug() << "cm sf status: " << this->errorString(this->m_manager_sf->error());
+
     delete dept;
     while (!departmentName.isEmpty())
         departmentName.takeFirst();
@@ -302,7 +371,6 @@ void ContactsEngine::enumerateMgrs()
     foreach(QString m, mgrs)
     {
         qDebug() << "\tmgr: " << m << endl;
-        this->dumpContactMgr();
     }
     qDebug() << endl;
 }
@@ -310,14 +378,24 @@ void ContactsEngine::enumerateMgrs()
 // dump the current contact manager.
 void  ContactsEngine::dumpContactMgr()
 {
-    qDebug() << "Dump Contact Manager:" << endl;
+    qDebug() << "Dump Contact Manager(default):" << endl;
     if (this->m_manager) {
         qDebug() << "\tname: " << this->m_manager->managerName() << endl;
         qDebug() << "\tURI: "  << this->m_manager->managerUri() << endl;
         qDebug() << "\tVersion: "  << this->m_manager->managerVersion() << endl;
         qDebug() << "\tCount:" << this->m_manager->contacts().count() << endl;
     } else {
-        qDebug() << "\t Contact Manager set to zero." << endl;
+        qDebug() << "\t Contact Manager(default) set to zero." << endl;
+    }
+    qDebug() << endl;
+    qDebug() << "Dump Contact Manager(SF Staff):" << endl;
+    if (this->m_manager_sf) {
+        qDebug() << "\tname: " << this->m_manager_sf->managerName() << endl;
+        qDebug() << "\tURI: "  << this->m_manager_sf->managerUri() << endl;
+        qDebug() << "\tVersion: "  << this->m_manager_sf->managerVersion() << endl;
+        qDebug() << "\tCount:" << this->m_manager_sf->contacts().count() << endl;
+    } else {
+        qDebug() << "\t Contact Manager(SF Staff) set to zero." << endl;
     }
     qDebug() << endl;
 }
