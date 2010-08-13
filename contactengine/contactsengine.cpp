@@ -96,7 +96,7 @@ void ContactsEngine::populateAddresses()
 
     number = new QContactPhoneNumber();
     number->setContexts(QContactDetail::ContextWork);
-    number->setNumber("+1-650-286-3350?");
+    number->setNumber("+1-650-286-3350");
     contact->saveDetail(number);
     //fire.setPreferredDetail("DialAction",number); //doesn't compile. Has it been depreciated?
 
@@ -129,7 +129,7 @@ void ContactsEngine::populateAddresses()
 
     number = new QContactPhoneNumber();
     number->setContexts(QContactDetail::ContextWork);
-    number->setNumber("+1(650)286-3300?");
+    number->setNumber("+1(650)286-3300");
     contact->saveDetail(number);
 
     // create address detail
@@ -159,7 +159,7 @@ void ContactsEngine::populateAddresses()
 
     number = new QContactPhoneNumber();
     number->setContexts(QContactDetail::ContextWork);
-    number->setNumber("+1(650)367-9999?");
+    number->setNumber("+1(650)367-9999");
     contact->saveDetail(number);
 
     // create address detail
@@ -189,7 +189,7 @@ void ContactsEngine::populateAddresses()
 
     number = new QContactPhoneNumber();
     number->setContexts(QContactDetail::ContextWork);
-    number->setNumber("+1(650)688-8400??");
+    number->setNumber("+1(650)688-8400");
     contact->saveDetail(number);
 
     // create address detail
@@ -220,7 +220,7 @@ void ContactsEngine::populateAddresses()
 
     number = new QContactPhoneNumber();
     number->setContexts(QContactDetail::ContextWork);
-    number->setNumber("+1(650)858-3328???");
+    number->setNumber("+1(650)858-3328");
     contact->saveDetail(number);
 
     // create address detail
