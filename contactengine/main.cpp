@@ -11,16 +11,8 @@ int main(int argc, char *argv[])
     MainWindow w;
 
     DBTools dbt;
-    QString dbLocation;
+    QString dbLocation(":/contacts.csv");
 
-#ifdef Q_OS_SYMBIAN
-        dbLocation = QDesktopServices::storageLocation(QDesktopServices::DataLocation);
-        dbLocation.append(QDir::separator());
-        dbLocation.append("contacts.csv");
-
-#else
-        dbLocation = "C:\\workspace\\QtExamples\\contactengine\\contacts.csv";
-#endif
     qDebug() << "dbLocation=" << dbLocation << endl;
     dbt.importCSV(dbLocation);
 

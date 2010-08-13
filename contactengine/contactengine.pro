@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui sql
+QT       += core gui
 
 TARGET = contactengine
 TEMPLATE = app
@@ -42,3 +42,6 @@ symbian {
     TARGET.EPOCSTACKSIZE = 0x14000
     TARGET.EPOCHEAPSIZE = 0x020000 0x800000
 }
+
+RESOURCES += \
+    resouce.qrc
