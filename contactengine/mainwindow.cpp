@@ -1,4 +1,5 @@
 #include <QComboBox>
+#include <QMenuBar>
 #include <QMessageBox>
 
 #include <QDebug>
@@ -24,11 +25,29 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->comboBox->addItems(this->ce->dataSources());
     ui->listView->setModel(this->ce);
+
+    this->createMenus();
+}
+
+void MainWindow::createMenus()
+    {
+        verAction = new QAction(tr("&Version"),this);
+        menuBar()->addAction(verAction);
+        connect(verAction, SIGNAL(triggered()),this, SLOT(displayVersion()));
+
+        exitAction = new QAction(tr("&Exit"),this);
+        menuBar()->addAction(exitAction);
+        connect(exitAction, SIGNAL(triggered()),this, SLOT(close()));
+    }
+
+void MainWindow::displayVersion()
+{
+    QMessageBox::information(this,"Qt Version", qVersion());
 }
 
 void MainWindow::errorOccurred(QString errMsg)
 {
-    QMessageBox::warning(this,"Err Routed",errMsg);
+    QMessageBox::information(this,"Err Routed",errMsg);
     qDebug() << errMsg << endl;
 }
 

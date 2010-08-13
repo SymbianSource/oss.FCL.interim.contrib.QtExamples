@@ -15,11 +15,16 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
+    void createMenus();
 
 public slots:
     void errorOccurred(QString errMsg);
+    void displayVersion();
+
 
 private:
+    QAction *verAction;
+    QAction *exitAction;
     Ui::MainWindow *ui;
     ContactsEngine *ce;
 };
