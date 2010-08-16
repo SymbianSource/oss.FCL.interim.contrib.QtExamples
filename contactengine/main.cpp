@@ -5,6 +5,19 @@
 #include "dbtools.h"
 #include <QDebug>
 
+// Tech Tip: By default, Actions is added to the Options menu. The
+// idea is to support context menus on non-touch mobiles.
+void disableContextMenu()
+{
+    QWidgetList widgets = QApplication::allWidgets();
+    QWidget* wid=0;
+    foreach(wid,widgets)
+    {
+        wid->setContextMenuPolicy(Qt::NoContextMenu);
+    }
+}
+
+
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
@@ -15,6 +28,8 @@ int main(int argc, char *argv[])
 
     qDebug() << "dbLocation=" << dbLocation << endl;
     dbt.importCSV(dbLocation);
+
+    disableContextMenu();
 
 #if defined(Q_WS_S60)
     w.showMaximized();
