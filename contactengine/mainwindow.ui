@@ -14,29 +14,55 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QWidget" name="">
+   <widget class="QStackedWidget" name="stackedWidget">
     <property name="geometry">
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>361</width>
-      <height>641</height>
+      <width>359</width>
+      <height>621</height>
      </rect>
     </property>
-    <layout class="QVBoxLayout" name="verticalLayout">
-     <item>
-      <widget class="QComboBox" name="comboBox">
-       <property name="font">
-        <font>
-         <pointsize>12</pointsize>
-        </font>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QListView" name="listView"/>
-     </item>
-    </layout>
+    <widget class="QWidget" name="page">
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>-10</x>
+        <y>-10</y>
+        <width>361</width>
+        <height>641</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QComboBox" name="comboBox">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QListView" name="listView"/>
+       </item>
+      </layout>
+     </widget>
+     <zorder>listView</zorder>
+     <zorder>layoutWidget</zorder>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QGraphicsView" name="graphicsView">
+      <property name="geometry">
+       <rect>
+        <x>-10</x>
+        <y>0</y>
+        <width>371</width>
+        <height>711</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
    </widget>
   </widget>
  </widget>

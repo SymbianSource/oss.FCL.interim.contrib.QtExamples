@@ -42,7 +42,9 @@ private:
 
 private:
     QMap<QString, QString> m_availableManagers;
+    // this is the default mgr. On device, it pull info from contacts as expected.
     QPointer<QContactManager> m_manager;
+    // this one is simply in memory. Put the Symbian Foundation contacts here.
     QPointer<QContactManager> m_manager_sf;
 };
 

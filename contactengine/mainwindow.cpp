@@ -13,6 +13,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    this->createMenus();
+
     this->ce = new ContactsEngine(this);
 
     connect(this->ce, SIGNAL(errorOccurred(QString)),
@@ -26,11 +28,20 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->comboBox->addItems(this->ce->dataSources());
     ui->listView->setModel(this->ce);
 
-    this->createMenus();
+    this->details = new DetailsGV(this,ui->graphicsView);
+    connect(this->details,SIGNAL(closeMe()),this,SLOT(close()));
+    connect(this->details,SIGNAL(backToList()),this, SLOT(displayList()));
+
+    ui->stackedWidget->setCurrentIndex(MainWindow::EListPage);
+
 }
 
 void MainWindow::createMenus()
     {
+        detailsAction = new QAction(tr("&Details"),this);
+        menuBar()->addAction(detailsAction);
+        connect(detailsAction, SIGNAL(triggered()),this, SLOT(displayDetails()));
+
         verAction = new QAction(tr("&Version"),this);
         menuBar()->addAction(verAction);
         connect(verAction, SIGNAL(triggered()),this, SLOT(displayVersion()));
@@ -39,6 +50,16 @@ void MainWindow::createMenus()
         menuBar()->addAction(exitAction);
         connect(exitAction, SIGNAL(triggered()),this, SLOT(close()));
     }
+
+void MainWindow::displayDetails()
+{
+    ui->stackedWidget->setCurrentIndex(MainWindow::EDetailsGV);
+}
+
+void MainWindow::displayList()
+{
+    ui->stackedWidget->setCurrentIndex(MainWindow::EListPage);
+}
 
 void MainWindow::displayVersion()
 {

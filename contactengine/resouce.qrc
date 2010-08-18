@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/">
         <file>contacts.csv</file>
+        <file>images/johnny_automatic_marching_band_1.svg</file>
     </qresource>
 </RCC>

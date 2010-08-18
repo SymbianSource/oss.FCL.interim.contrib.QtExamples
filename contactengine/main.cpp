@@ -31,6 +31,7 @@ int main(int argc, char *argv[])
 
     disableContextMenu();
 
+    w.setWindowTitle("Qt Study App");
 #if defined(Q_WS_S60)
     w.showMaximized();
 #else

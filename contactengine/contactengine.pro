@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui sql
+QT       += core gui sql svg
 
 TARGET = contactengine
 TEMPLATE = app
@@ -14,13 +14,15 @@ CONFIG += debug
 SOURCES += main.cpp\
         mainwindow.cpp \
     contactsengine.cpp \
-    dbtools.cpp
+    dbtools.cpp \
+    detailsgv.cpp
 
 HEADERS  += mainwindow.h \
     contactsengine.h \
     database.h \
     dbtools.h \
-    database.h
+    database.h \
+    detailsgv.h
 
 
 FORMS    += mainwindow.ui
