@@ -53,12 +53,11 @@ void DetailsGV::createLayout()
     leftLayout->addItem(proxyForName["back"]);
     leftLayout->addItem(proxyForName["exitApp"]);
 
-     // looks like there is a bug with respect to displaying jpeg's in a scene on Symbian^1.
-     // I've asked about it on the mailing list QtS60-feedback@trolltech.com.
+
+     // you can use jpeg too.  However, it consumes more memory. If you want to use jpeg, edit
+     // the pro file and bump up the max heap size.
      //QGraphicsPixmapItem *profile = new QGraphicsPixmapItem( QPixmap(":/images/MadProf_thumb.jpg"));
-     // strange returns width of screen not button ?
-     // int w = this->callMe->width();
-     // profile->setX(100);
+
 
      // svg from open clipart (http://www.openclipart.org/detail/959)
      QGraphicsSvgItem *profile = new QGraphicsSvgItem(":/images/johnny_automatic_marching_band_1.svg");
