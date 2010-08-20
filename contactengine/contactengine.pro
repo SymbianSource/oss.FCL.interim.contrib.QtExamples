@@ -47,3 +47,6 @@ symbian {
 
 RESOURCES += \
     resouce.qrc
+
+OTHER_FILES += \
+    readme.txt
