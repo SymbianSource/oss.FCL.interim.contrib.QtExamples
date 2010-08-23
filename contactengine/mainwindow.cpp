@@ -31,7 +31,7 @@ MainWindow::MainWindow(QWidget *parent) :
     this->details = new DetailsGV(this,ui->graphicsView);
     connect(this->details,SIGNAL(closeMe()),this,SLOT(close()));
     connect(this->details,SIGNAL(backToList()),this, SLOT(displayList()));
-
+    connect(ui->listView, SIGNAL(clicked(QModelIndex)),this, SLOT(displayDetails()));
     ui->stackedWidget->setCurrentIndex(MainWindow::EListPage);
 
 }
