@@ -352,16 +352,7 @@ QStringList ContactsEngine::dataSources()
 
 int ContactsEngine::rowCount(const QModelIndex &parent) const
  {
-    QList<QContact> allContacts;
-    int rc = 0;
-    if (this->m_manager)
-    {
-        allContacts = this->m_manager->contacts();
-        // return stringList.count();
-        if (!allContacts.isEmpty())
-            rc = allContacts.count();
-    }
-    return rc;
+    return this->m_manager->contacts().count();
  }
 
 void ContactsEngine::enumerateMgrs()
