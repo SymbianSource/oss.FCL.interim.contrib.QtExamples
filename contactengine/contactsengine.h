@@ -46,6 +46,8 @@ private:
     QPointer<QContactManager> m_manager;
     // this one is simply in memory. Put the Symbian Foundation contacts here.
     QPointer<QContactManager> m_manager_sf;
+    // cache list of all contacts.
+    QList<QContact> m_allContacts;
 };
 
 #endif // CONTACTSENGINE_H

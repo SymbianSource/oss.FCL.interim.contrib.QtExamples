@@ -121,6 +121,11 @@ void ContactsEngine::createManager()
         m_manager = new QContactManager();
     }
 
+    if(this->m_manager && (this->m_manager->error() == QContactManager::NoError ))
+    {
+        this->m_allContacts = this->m_manager->contacts();
+    }
+
     // Show message to the user
     QString msg = QString("Manager %1 created, that has %2 contacts")
                   .arg(m_manager->managerName()).arg(contactIds.count());
@@ -352,7 +357,7 @@ QStringList ContactsEngine::dataSources()
 
 int ContactsEngine::rowCount(const QModelIndex &parent) const
  {
-    return this->m_manager->contacts().count();
+    return this->m_allContacts.count();
  }
 
 void ContactsEngine::enumerateMgrs()
@@ -394,17 +399,16 @@ void  ContactsEngine::dumpContactMgr()
 QVariant ContactsEngine::data(const QModelIndex &index, int role) const
  {
     QVariant rc;
-    QList<QContact> allContacts;
     QContact c;
 
-    allContacts = this->m_manager->contacts();
 
-    if (!index.isValid() || index.row() >= allContacts.size()) {
+
+    if (!index.isValid() || index.row() >= this->m_allContacts.size()) {
          return rc;
     }
     if (role == Qt::DisplayRole) {
         //rc = QVariant(allContacts.at(index.row()).displayLabel());
-        c = allContacts.at(index.row());
+        c = this->m_allContacts.at(index.row());
         // organizations do not have first and last names.  So the displayLabel() is empty.
         QContactDetail cd = c.detail(QContactName::DefinitionName);
         if (cd.isEmpty()) {
@@ -414,4 +418,4 @@ QVariant ContactsEngine::data(const QModelIndex &index, int role) const
         }
     }
     return rc;
- }
+}
