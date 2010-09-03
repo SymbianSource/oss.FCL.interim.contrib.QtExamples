@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/Taurus.svg</file>
+        <file>images/Aries.svg</file>
+        <file>images/Cancer.svg</file>
+        <file>images/Gemini.svg</file>
+        <file>images/Leo.svg</file>
+        <file>images/Scorpio.svg</file>
+        <file>images/Aquarius.svg</file>
+        <file>images/Capricorn.svg</file>
+        <file>images/Libra.svg</file>
+        <file>images/Pisces.svg</file>
+        <file>images/Sagittarius.svg</file>
+        <file>images/Virgo.svg</file>
+    </qresource>
+</RCC>
