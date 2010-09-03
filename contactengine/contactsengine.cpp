@@ -130,7 +130,6 @@ void ContactsEngine::createManager()
     QString msg = QString("Manager %1 created, that has %2 contacts")
                   .arg(m_manager->managerName()).arg(contactIds.count());
 
-   // emit errorOccurred(msg);
 }
 
 

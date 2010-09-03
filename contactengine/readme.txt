@@ -21,3 +21,4 @@ John Kern
 * Get the linkedIn profile. Users might want to review it before visiting with someone who they haven't seen in awhile.
 * dynamically determine if it is a touch or non-touch device.
 * beef up QStackedView to associated the options menu with the page in questions.
+* Using location to sort the the contains.
