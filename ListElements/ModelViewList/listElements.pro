@@ -24,9 +24,6 @@ HEADERS  += mainwindow.h \
 
 FORMS    += mainwindow.ui
 
-CONFIG += mobility
-MOBILITY = 
-
 symbian {
     TARGET.UID3 = 0xe5e9fbec
     # TARGET.CAPABILITY += 
@@ -36,5 +33,3 @@ symbian {
 
 RESOURCES += \
     assets.qrc
-
-include(../modeltest-0.2/modeltest.pri)
