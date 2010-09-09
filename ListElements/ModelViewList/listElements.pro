@@ -14,13 +14,15 @@ SOURCES += main.cpp\
     zodiacsign.cpp \
     mainwindow.cpp \
     zodiacmodel.cpp \
-    zodiacdelegate.cpp
+    zodiacdelegate.cpp \
+    PLLayout.cpp
 
 
 HEADERS  += mainwindow.h \
     zodiacsign.h \
     zodiacmodel.h \
-    zodiacdelegate.h
+    zodiacdelegate.h \
+    PLLayout.h
 
 FORMS    += mainwindow.ui
 
