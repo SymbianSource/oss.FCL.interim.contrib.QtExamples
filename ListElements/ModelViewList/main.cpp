@@ -14,7 +14,6 @@ int main(int argc, char *argv[])
     MainWindow w;
     w.setWindowTitle("Zodiac");
 #if defined(Q_WS_S60)
-    // w.showMaximized();
     w.showFullScreen();
 #else
     w.show();

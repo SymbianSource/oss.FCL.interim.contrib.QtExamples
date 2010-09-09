@@ -101,12 +101,6 @@ QVariant ZodiacModel::data(const QModelIndex &index, int role)const
     {
         // a QBrush consists of a style, color, gradient and texture.
         rc = QVariant(QBrush(this->signs.at(index.row())->getColor()));
-        // TODO: Doesn't the gradient require a rectangle and the Model shouldn't know
-        // anything about the UI. Strange.
-//        QLinearGradient gradient;
-//        gradient.setColorAt(0, QColor(0,136,181));
-//        gradient.setColorAt(0.2, QColor(181,231,247));
-//        gradient.setColorAt(1, QColor(0,136,181));
 
         break;
     }

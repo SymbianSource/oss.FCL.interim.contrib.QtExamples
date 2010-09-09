@@ -21,20 +21,23 @@ MainWindow::MainWindow(QWidget *parent) :
     listView->setLineWidth(4);
     exitButton = new QPushButton(this);
     exitButton->setText("Exit");
+    connect(exitButton, SIGNAL(clicked()), this,SLOT(close()));
 
     // define the model
     ZodiacModel *zModel = new ZodiacModel(this);
     listView->setModel(zModel);
+#ifdef USE_DELEGATE
     ZodiacDelegate *delegate = new ZodiacDelegate(this);
     listView->setItemDelegate(delegate);
+#endif
 
     // create landscape layout
-    layoutLandscape = new QHBoxLayout(this);
+    layoutLandscape = new QHBoxLayout;
     layoutLandscape->addWidget(listView);
     layoutLandscape->addWidget(exitButton);
 
     //create portrait layout
-    layoutPortrait = new QVBoxLayout(this);
+    layoutPortrait = new QVBoxLayout;
     layoutPortrait->addWidget(listView);
     layoutPortrait->addWidget(exitButton);
 

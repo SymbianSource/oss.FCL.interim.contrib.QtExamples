@@ -6,7 +6,7 @@
 
 QT       += core gui svg
 
-TARGET = test242
+TARGET = listElements
 TEMPLATE = app
 
 
@@ -17,6 +17,8 @@ SOURCES += main.cpp\
     zodiacdelegate.cpp \
     PLLayout.cpp
 
+
+# DEFINES = USE_DELEGATE
 
 HEADERS  += mainwindow.h \
     zodiacsign.h \
