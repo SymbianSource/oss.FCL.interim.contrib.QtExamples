@@ -17,9 +17,6 @@ SOURCES += main.cpp\
     zodiacdelegate.cpp \
     PLLayout.cpp
 
-
-# DEFINES = USE_DELEGATE
-
 HEADERS  += mainwindow.h \
     zodiacsign.h \
     zodiacmodel.h \

@@ -26,10 +26,8 @@ MainWindow::MainWindow(QWidget *parent) :
     // define the model
     ZodiacModel *zModel = new ZodiacModel(this);
     listView->setModel(zModel);
-#ifdef USE_DELEGATE
     ZodiacDelegate *delegate = new ZodiacDelegate(this);
     listView->setItemDelegate(delegate);
-#endif
 
     // create landscape layout
     layoutLandscape = new QHBoxLayout;

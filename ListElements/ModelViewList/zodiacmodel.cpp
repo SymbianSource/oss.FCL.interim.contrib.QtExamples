@@ -111,6 +111,8 @@ QVariant ZodiacModel::data(const QModelIndex &index, int role)const
         {
             // white text on a white or yellow background doesn't work. Let's change it.
             rc = QVariant(QColor("silver"));
+        } else {
+            rc = QVariant (QColor(Qt::white));
         }
         break;
     }
