@@ -80,8 +80,16 @@ ZodiacModel::ZodiacModel(QObject *parent) :
 
 int ZodiacModel::rowCount (const QModelIndex &index) const
 {
+    Q_UNUSED(index)
     return this->signs.count();
 }
+
+
+// This is a virtual method for the QAbstractItemList.
+// Currently, this code uses a delegate which draws the list item. So, the data() method is
+//   effectively ignored by the QListView in favor of the delegate class.
+// If you chose not to use the delegate, the QListView will query this method. Remember
+//   to change the type returned by Qt::DecorationRole to ICon.
 
 QVariant ZodiacModel::data(const QModelIndex &index, int role)const
 {
@@ -118,7 +126,10 @@ QVariant ZodiacModel::data(const QModelIndex &index, int role)const
     }
     case Qt::DecorationRole:
     {
+        // For the delegate we return a QString
         rc = QVariant(this->signs.at(index.row())->getImage());
+        // if you are not using a delegate, return a QIcon like this.
+        // rc = QVariant(QIcon(this->signs.at(index.row())->getImage()));
     }
     default:
         break;
