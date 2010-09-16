@@ -2,5 +2,9 @@
     <qresource prefix="/">
         <file>contacts.csv</file>
         <file>images/johnny_automatic_marching_band_1.svg</file>
+        <file>images/icn_removeview.png</file>
+        <file>images/icn_addmenu.png</file>
+        <file>images/icn_addstackview.png</file>
+        <file>images/icn_addview.png</file>
     </qresource>
 </RCC>

@@ -9,6 +9,9 @@ namespace Ui {
     class MainWindow;
 }
 
+// If you are building this as a stand alone app (ie, not using the Orange Labs FW),
+// use this class.
+
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
